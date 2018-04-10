@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Михаил Муратов](https://up.htmlacademy.ru/adaptive/14/user/514075).
-* Наставник: `Неизвестно`.
+* Наставник: [Галина Борисова](https://htmlacademy.ru/profile/galina_borisova).
 
 ---
 
