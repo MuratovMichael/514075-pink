@@ -24,43 +24,52 @@
             <a href="#">HTML Academy</a>
           </li>
         </ul>
+        <button class="site-list__button" type="button">x</button>
       </nav>
-      <h1 class="main-header__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </header>
     <main class="page-main">
       <section class="competition">
+        <h1 class="main-header__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
         <p class="competition__text-top">Поделитесь своей историей и получите шанс выиграть ценный приз - 1 миль на вашу бонусную карту!</p>
         <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
-          <label for="surname">Фамилия</label>
-          <input class="main-form__contacts" id="surname" type="text" name="surname" placeholder="Укажите фамилию">
-          <label for="name">Имя</label>
-          <input class="main-form__contacts" id="name" type="text" name="name" placeholder="Введите ваше имя">
-          <label for="patronymic">Отчество</label>
-          <input class="main-form__contacts" id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
-          <h2 class="main-form__text">Ваши безбашенные достижения в путешествии</h2>
-          <input class="main-form__travels" id="selfie" type="checkbox" name="travels" checked>
-          <label for="selfie">Сделал селфи с акулой</label>
-          <input class="main-form__travels" id="beach" type="checkbox" name="travels" checked>
-          <label for="beach">Обгорел на пляже</label>
-          <input class="main-form__travels" id="chuck-norris" type="checkbox" name="travels">
-          <label for="chuck-norris">Видел Чака Норриса</label>
-          <input class="main-form__travels" id="souvenir" type="checkbox" name="travels">
-          <label for="souvenir">Накупил сувениров</label>
-          <input class="main-form__travels" id="tower" type="checkbox" name="travels" checked>
-          <label for="tower">Удержал башню</label>
-          <input class="main-form__travels" id="hotel" type="checkbox" name="travels">
-          <label for="hotel">Разгромил отель</label>
-          <input class="main-form__contacts" id="tel" type="text" name="tel" placeholder="Номер, пожалуйста">
-          <label for="tel">Номер телефона</label>
-          <input class="main-form__contacts" id="email" type="text" name="email" placeholder="Введите почту">
-          <label for="email">Адрес почты</label>
-          <h2 class="main-form__text">С каким приложением путешествовали?</h2>
-          <input class="main-form__attachment" id="ios" type="radio" name="attachment" value="ios" checked>
-          <label for="ios">Pink для iOS</label>
-          <input class="main-form__attachment" id="android" type="radio" name="attachment" value="android">
-          <label for="android">Pink для iOS</label>
-          <input class="main-form__attachment" id="windows" type="radio" name="attachment" value="windows">
-          <label for="windows">Windows phone</label>
+          <fieldset class="form-white">
+            <label for="surname">Фамилия</label>
+            <input class="form-white__contacts" id="surname" type="text" name="surname" placeholder="Укажите фамилию">
+            <label for="name">Имя</label>
+            <input class="form-white__contacts" id="name" type="text" name="name" placeholder="Введите ваше имя">
+            <label for="patronymic">Отчество</label>
+            <input class="form-white__contacts" id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+          </fieldset>
+          <fieldset class="form-gray">
+            <h2 class="form-gray__text">Ваши безбашенные достижения в путешествии</h2>
+            <input class="form-gray__travels" id="selfie" type="checkbox" name="travels" checked>
+            <label for="selfie">Сделал селфи с акулой</label>
+            <input class="form-gray__travels" id="beach" type="checkbox" name="travels" checked>
+            <label for="beach">Обгорел на пляже</label>
+            <input class="form-gray__travels" id="chuck-norris" type="checkbox" name="travels">
+            <label for="chuck-norris">Видел Чака Норриса</label>
+            <input class="form-gray__travels" id="souvenir" type="checkbox" name="travels">
+            <label for="souvenir">Накупил сувениров</label>
+            <input class="form-gray__travels" id="tower" type="checkbox" name="travels" checked>
+            <label for="tower">Удержал башню</label>
+            <input class="form-gray__travels" id="hotel" type="checkbox" name="travels">
+            <label for="hotel">Разгромил отель</label>
+          </fieldset>
+          <fieldset class="form-white">
+            <input class="form-white__contacts" id="tel" type="text" name="tel" placeholder="Номер, пожалуйста">
+            <label for="tel">Номер телефона</label>
+            <input class="form-white__contacts" id="email" type="text" name="email" placeholder="Введите почту">
+            <label for="email">Адрес почты</label>
+          </fieldset>
+          <fieldset class="form-gray">
+            <h2 class="form-gray__text">С каким приложением путешествовали?</h2>
+            <input class="form-gray__attachment" id="ios" type="radio" name="attachment" value="ios" checked>
+            <label for="ios">Pink для iOS</label>
+            <input class="form-gray__attachment" id="android" type="radio" name="attachment" value="android">
+            <label for="android">Pink для iOS</label>
+            <input class="form-gray__attachment" id="windows" type="radio" name="attachment" value="windows">
+            <label for="windows">Windows phone</label>
+          </fieldset>
           <h2 class="main-form__text">Опишите свои эмоции</h2>
           <label class="main-form__text" for="comments">Опишите свои эмоции</label>
           <textarea class="main-form__comments" id="comments" name="comments" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
@@ -70,7 +79,9 @@
       </section>
     </main>
     <footer class="main-footer">
-      <img class="main-footer__image" src="img/logo.png" width="" height="" alt="Логотип Пинк">
+      <a class="main-footer__logo" href="#">
+        <svg></svg>
+      </a>
       <div class="social">
         <ul class="social__list">
           <li class="social__item">

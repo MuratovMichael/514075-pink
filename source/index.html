@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Главная</title>
   </head>
   <body>
     <header class="main-header">
@@ -25,28 +25,29 @@
           </li>
         </ul>
       </nav>
-      <div class="download-application">
-        <a class="download-application__button" href="#">Скачать приложение</a>
-        <p class="download-application__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </div>
     </header>
+    <section class="download-attachment">
+      <h1 class="vasually-hidden">Скачать приложение Пинк</h1>
+      <a class="download-attachment__button" href="#">Скачать приложение</a>
+      <p class="download-attachment__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    </section>
     <main class="page-main">
       <section class="advantages">
-        <h1 class="visually-hidden">Наши преимущества</h1>
+        <h2 class="visually-hidden">Наши преимущества</h2>
         <p class="advantages__text">Устали от серости мегаполиса?</p>
         <p class="advantages__text">Нам есть, что вам предложить!</p>
-        <div class="advantages-block">
-          <ul class="advantages-block__advantages-list">
+        <div class="advantages-item">
+          <ul class="advantages-item__advantages-list">
             <li class="advantages-list__item">
-              <h2 class="advantages__list">Поднимает настроение</h2>
+              <h3 class="advantages__title">Поднимает настроение</h3>
               <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
             <li class="advantages-list__item">
-              <h2 class="advantages__list">Меняет мир вокруг</h2>
+              <h3 class="advantages__title">Меняет мир вокруг</h3>
               <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
             <li class="advantages-list__item">
-              <h2 class="advantages__title">Заводит новых друзей</h2>
+              <h3 class="advantages__title">Заводит новых друзей</h3>
               <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
@@ -67,35 +68,63 @@
       <section class="hits">
         <b class="hits__class">Стандарт</b>
         <span class="hits__price">3,99 USD</span>
-        <ul class="hits-list">
-          <li class="hits-list__item">
-            <a href="#">Розовый фильтр</a>
+        <table class="table-hits">
+          <tr>
+            <td class="table-hits__text">Розовый фильтр</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="table-hits__text">Смайлики</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="table-hits__text">Комментарии</td>
+            <td></td>
+          </tr>
+        </table>
+      </section>
+      <section class="contacts">
+        <p class="contacts__text">Остались вопросы? Свяжитесь с нами!</p>
+        <ul class="contacts__contacts-list">
+          <li class="contacts-list__item">
+            <p class="contacts-list__text-contacts__text--bold">Звоните:
+            <span class="contacts-list__text-contacts__text--red">+7(812)555-66-66</span>
+            </p>
           </li>
-          <li class="hits-list__item">
-            <a href="#">Смайлики</a>
+          <li class="contacts-list__item">
+            <p class="contacts-list__text-footer-contacts__text--bold">Пишите:
+            <span class="contacts-list__text-contacts__text--red">mail@htmlacademy.ru</span>
+            </p>
           </li>
-          <li class="hits-list__item">
-            <a href="#">Комментарии</a>
+          <li class="contacts-list__item">
+            <p class="contacts-list__text-footer-contacts__text--bold">Приезжайте в гости:
+            <span class="contacts-list__text-contacts__text--red">ул.Большая Конюшенная, 19/8</span>
+            </p>
           </li>
         </ul>
       </section>
     </main>
-    <footer class="main-footer-index">
-      <p class="main-footer-index__text">Остались вопросы? Свяжитесь с нами!</p>
-      <ul class="footer-contacts">
-        <li class="footer-contacts__item">
-          <p class="footer-contacts__text--bold">Звоните:<span class="footer-contacts__text--red">+7(812)555-66-66</span>
-          </p>
-        </li>
-        <li class="footer-contacts__item">
-          <p class="footer-contacts__text--bold">Пишите:<span class="footer-contacts__text--red">mail@htmlacademy.ru</span>
-          </p>
-        </li>
-        <li class="footer-contacts__item">
-          <p class="footer-contacts__text--bold">Приезжайте в гости:<span class="footer-contacts__text--red">ул.Большая Конюшенная, 19/8</span>
-          </p>
-        </li>
-      </ul>
+    <footer class="main-footer">
+      <a class="main-footer__logo" href="#">
+        <svg></svg>
+      </a>
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#">Твиттер</a>
+          </li>
+          <li class="social__item">
+            <a href="#">Фейсбук</a>
+          </li>
+          <li class="social__item">
+            <a href="#">Ютуб</a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <span class="copyright__developed">Разработано</span>
+        <img class="copyright__logo-academy" src="img/logo-academy.svg" width="" height="" alt="Логотип HTML Academy">
+      </div>
       <section class="map"></section>
     </footer>
   </body>
