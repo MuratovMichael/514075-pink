@@ -1,0 +1,46 @@
+.flex() {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.set-font(@font-size; @line-height) {
+  font-size: @font-size;
+  line-height: @line-height;
+}
+
+.set-list(@margin; @padding; @list-style) {
+  margin: @margin;
+  padding: @padding;
+  list-style: @list-style;
+}
+
+.media(@screen; @rules) {
+
+& when (@screen = tablet) {
+ @media (min-width: @tablet-area) {
+   @rules();
+ }
+}
+  & when (@screen = desktop) {
+ @media (min-width: @desktop-area) {
+   @rules();
+ }
+}
+}
+
+.container() {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 29px;
+}
+
+.media(tablet; {
++  width: 668px;
++  padding: 0;
++ });
++
++.media(desktop; {
++  width: 1050px;
++  padding: 0;
++ });
