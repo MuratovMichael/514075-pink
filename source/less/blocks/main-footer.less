@@ -1,5 +1,31 @@
 .main-footer {
-  max-height: 284px;
+  min-height: 284px;
   background-color: @white-color;
+}
+
+.main-footer__logo {
+  padding-bottom: 40px;
+}
+
+.main-form__button {
+  width: 276px;
+  border: none;
+  padding-top: 15px;
+  padding-right: 45px;
+  padding-bottom: 15px;
+  padding-left: 45px;
+  border-radius: 3px;
+}
+
+.main-form__comments {
+  width: 276px;
+  min-height: 197px;
+  border-radius: 2px;
+}
+
+@media (max-width: @mobile-width) {
+  .main-footer {
+    max-height: 284px;
+  }
 }
 

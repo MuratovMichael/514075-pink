@@ -3,33 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header__logo">
-        <img class="main-header__logo-image" src="img/logo.png" width="" height="" alt="Логотип Пинк">
-      </a>
-      <button class="site-list__button" type="button">x</button>
+      <ul class="main-header__list">
+        <li class="main-header__logo">
+          <a class="#">
+            <img class="main-header__logo-image" src="img/logo.png" width="" height="" alt="Логотип Пинк">
+          </a>
+        </li>
+        <li class="main-header__button">
+          <button class="main-header__button" type="button">x</button>
+        </li>
+      </ul>
       <nav class="main-navigation">
         <ul class="main-navigation__list site-list">
           <li class="site-list__item">
-            <a href="index.html">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
+            <a class="site-list__link" href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a>Конкурс</a>
+            <a class="site-list__link" href="form.html">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="#">HTML Academy</a>
+            <a class="site-list__link" href="#">HTML Academy</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="page-main">
       <section class="competition">
-        <h1 class="main-header__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <h1 class="competition__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
         <p class="competition__text-top">Поделитесь своей историей и получите шанс выиграть ценный приз - 1 миль на вашу бонусную карту!</p>
         <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form-white">
@@ -43,17 +53,17 @@
           <fieldset class="form-gray">
             <h2 class="form-gray__text form-gray__text--pink">Ваши безбашенные достижения в путешествии</h2>
             <input class="form-gray__travels" id="selfie" type="checkbox" name="travels" checked>
-            <label for="selfie">Сделал селфи с акулой</label>
+            <label class="form-gray__text" for="selfie">Сделал селфи с акулой</label>
             <input class="form-gray__travels" id="beach" type="checkbox" name="travels" checked>
-            <label for="beach">Обгорел на пляже</label>
+            <label class="form-gray__text" for="beach">Обгорел на пляже</label>
             <input class="form-gray__travels" id="chuck-norris" type="checkbox" name="travels">
-            <label for="chuck-norris">Видел Чака Норриса</label>
+            <label class="form-gray__text" for="chuck-norris">Видел Чака Норриса</label>
             <input class="form-gray__travels" id="souvenir" type="checkbox" name="travels">
-            <label for="souvenir">Накупил сувениров</label>
+            <label class="form-gray__text" for="souvenir">Накупил сувениров</label>
             <input class="form-gray__travels" id="tower" type="checkbox" name="travels" checked>
-            <label for="tower">Удержал башню</label>
+            <label class="form-gray__text" for="tower">Удержал башню</label>
             <input class="form-gray__travels" id="hotel" type="checkbox" name="travels">
-            <label for="hotel">Разгромил отель</label>
+            <label class="form-gray__text" for="hotel">Разгромил отель</label>
           </fieldset>
           <fieldset class="form-white">
             <input class="form-white__contacts" id="tel" type="text" name="tel" placeholder="Номер, пожалуйста">
@@ -64,11 +74,11 @@
           <fieldset class="form-gray">
             <h2 class="form-gray__text form-gray__text--pink">С каким приложением путешествовали?</h2>
             <input class="form-gray__attachment" id="ios" type="radio" name="attachment" value="ios" checked>
-            <label for="ios">Pink для iOS</label>
+            <label class="form-gray__text" for="ios">Pink для iOS</label>
             <input class="form-gray__attachment" id="android" type="radio" name="attachment" value="android">
-            <label for="android">Pink для iOS</label>
+            <label class="form-gray__text" for="android">Pink для iOS</label>
             <input class="form-gray__attachment" id="windows" type="radio" name="attachment" value="windows">
-            <label for="windows">Windows phone</label>
+            <label class="form-gray__text" for="windows">Windows phone</label>
           </fieldset>
           <label class="main-form__text main-form__text--pink" for="comments">Опишите свои эмоции</label>
           <textarea class="main-form__comments" id="comments" name="comments" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>

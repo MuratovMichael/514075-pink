@@ -1,5 +1,21 @@
-.form-white--pink {
+.form-white {
+  background-color: @white-color;
+}
+
+.form-white__text--pink {
   font-size: 14px;
   line-height: 18px;
+  text-transform: uppercase;
   color: @pink-color;
+}
+
+.form-white {
+  border: none;
+}
+
+@media (min-width: @mobile-width) {
+  .form-white {
+    display: flex;
+    flex-direction: column;
+  }
 }

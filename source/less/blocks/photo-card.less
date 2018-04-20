@@ -3,10 +3,42 @@
   margin: 0 auto;
 }
 
+.photo-card__item {
+  background-color: @gray-color;
+  margin-bottom: 20px;
+}
+
+.photo-card__item:last-child {
+  margin-bottom: 0;
+}
+
+.photo-card__author-name {
+  color: @bg-standart-color;
+  font-weight: 700;
+}
+
 .photo-card__times-ago {
-  color: @gray-color;
+  color: @bg-standart-color;
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 24px;
+}
+
+.photo-card__text {
+  color: @bg-standart-color;
 }
 
 .photo-card__like {
+  font-size: 12px;
+  line-height: 24px;
   color: @pink-color;
+  text-transform: uppercase;
 }
+
+@media (min-width: @mobile-width) {
+  .photo-card {
+    display: flex;
+    flex-direction: column;
+  }
+}
+

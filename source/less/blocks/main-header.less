@@ -2,9 +2,29 @@
   min-height: 462px;
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
   background-size: cover;
 }
+
+.main-header__list {
+  .set-list(0, 0, none);
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px inset gray;
+}
+
+.main-header__logo {
+  height: 69px;
+  display: block;
+  flex-grow: 1;
+}
+
+@media (min-width: @mobile-width) {
+  .main-header__list {
+    min-height: 69px;
+  }
+}
+
 
 
 

@@ -1,5 +1,26 @@
-.form-gray--pink {
+.form-gray {
+  background-color: @gray-color;
+}
+
+.form-gray__text {
+  color: @bg-standart-color;
+}
+
+.form-gray__text--pink {
   font-size: 14px;
   line-height: 18px;
+  font-weight: 100;
+  text-transform: uppercase;
   color: @pink-color;
+}
+
+.form-gray {
+  border: none;
+}
+
+@media (min-width: @mobile-width) {
+  .form-gray {
+    display: flex;
+    flex-direction: column;
+  }
 }

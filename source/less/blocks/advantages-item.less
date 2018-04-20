@@ -12,8 +12,24 @@
 
 .advantages__title {
   color: @black-color;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .advantages__description {
   font: inherit;
+  color: @bg-standart-color;
+}
+
+@media(min-width: @mobile-width) {
+  .advantages-item__advantages-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media(min-width: @mobile-width) {
+  .advantages-list__item {
+    padding-bottom: 40px;
+  }
 }

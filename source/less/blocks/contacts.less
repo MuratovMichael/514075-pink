@@ -1,13 +1,35 @@
 .contacts__contacts-list {
   .set-list(0, 0, none);
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-list__item {
+  padding-bottom: 30px;
+}
+
+.contacts-list__item:last-child {
+  padding-bottom: 30px;
 }
 
 .contacts-list__text--bold {
+  display: block;
+  text-align: center;
+  color: @bg-standart-color;
   font-weight: 700;
+  font-size: 18px;
 }
 
 .contacts-list__text--pink {
+  display: block;
+  text-align: center;
   color: @pink-color;
+  font-size: 24px;
   font-weight: normal;
+}
+
+.contacts__text {
+  color: @bg-standart-color;
+  font-size: 24px;
 }
 

@@ -18,12 +18,12 @@
 .media(@screen; @rules) {
 
 & when (@screen = tablet) {
- @media (min-width: @tablet-area) {
+ @media (min-width: @tablet-width) {
    @rules();
  }
 }
   & when (@screen = desktop) {
- @media (min-width: @desktop-area) {
+ @media (min-width: @desktop-width) {
    @rules();
  }
 }
@@ -36,11 +36,11 @@
 }
 
 .media(tablet; {
-+  width: 668px;
-+  padding: 0;
-+ });
-+
-+.media(desktop; {
-+  width: 1050px;
-+  padding: 0;
-+ });
+  width: 668px;
+  padding: 0;
+});
+
+.media(desktop; {
+  width: 1050px;
+  padding: 0;
+});
