@@ -1,9 +1,19 @@
 .download-attachment {
-  min-height: 271px;
-  padding-top: 55px;
-  background-color: @bg-standart-color;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 462px;
 }
 
+.download-attachment::before {
+  content: "";
+  position: absolute;
+  width: 258px;
+  height: 286px;
+  background-image: url(../img/iphone-hand-mobile@1x.png);
+  background-repeat: no-repeat;
+  background-position: left 176px;
+}
 
 .download-attachment__button {
   color: @white-text;
@@ -30,6 +40,7 @@
 
 .download-list {
   .set-list(0, 0, none);
+  background-color: @bg-standart-color;
 }
 
 

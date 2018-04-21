@@ -7,16 +7,15 @@
   .set-list(0, 0, none);
   display: flex;
   flex-direction: row;
-  background-color: @bg-standart-color;
-  border-bottom: 1px inset @black-color;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid @black-color;
   padding-top: 20px;
   padding-right: 20px;
-  padding-bottom: 0;
+  padding-bottom: 15px;
   padding-left: 20px;
 }
 
 .main-header__logo {
-  height: 69px;
   display: block;
   flex-grow: 1;
 }
@@ -24,13 +23,13 @@
 .main-navigation__list {
   display: flex;
 }
-
+/*
 @media (min-width: @mobile-width) {
   .main-header__list {
     min-height: 69px;
   }
 }
-
+*/
 .container-absolute {
   position: absolute;
   width: 320px;
