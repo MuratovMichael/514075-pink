@@ -11,12 +11,21 @@
 .site-list__link {
   color: @white-color;
   display: block;
-  height: 69px;
+  height: 65px;
   text-align: center;
   text-decoration: none;
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;
   text-transform: uppercase;
-  border-bottom: 1px inset gray;
+  border-bottom: 1px inset black;
+}
+
+
+@media (min-width: @tablet-width) {
+  .main-navigation__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }

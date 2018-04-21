@@ -1,4 +1,5 @@
 .form-gray {
+  border: none;
   background-color: @gray-color;
 }
 
@@ -14,8 +15,13 @@
   color: @pink-color;
 }
 
-.form-gray {
-  border: none;
+.form-gray__list {
+  .set-list(0, 0, none);
+}
+
+.form-gray__list-row {
+  display: flex;
+  align-items: center;
 }
 
 @media (min-width: @mobile-width) {

@@ -1,16 +1,12 @@
 .main-header {
-  min-height: 462px;
-  background-image: url(../img/bg-back-mobile@1x.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
+  background-color: @bg-standart-color;
 }
 
 .main-header__list {
   .set-list(0, 0, none);
   display: flex;
   flex-direction: row;
-  border-bottom: 1px inset gray;
+  border-bottom: 1px inset black;
 }
 
 .main-header__logo {
@@ -19,9 +15,30 @@
   flex-grow: 1;
 }
 
+.main-navigation__list {
+  display: flex;
+}
+
 @media (min-width: @mobile-width) {
   .main-header__list {
     min-height: 69px;
+  }
+}
+
+@media (min-width: @mobile-width) {
+  .main-header {
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-header {
+    width: 660px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 
