@@ -1,3 +1,9 @@
+.main-navigation {
+  width: 100%;
+  position: absolute;
+  background-color: @bg-standart-color;
+}
+
 .main-navigation__list {
   .set-list(0, 0, none);
   display: flex;
@@ -22,10 +28,4 @@
 }
 
 
-@media (min-width: @tablet-width) {
-  .main-navigation__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-}
+
