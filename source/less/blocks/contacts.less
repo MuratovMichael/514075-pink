@@ -1,7 +1,15 @@
-.contacts__contacts-list {
-  .set-list(0, 0, none);
-  display: flex;
-  flex-direction: column;
+.contacts {
+  position: relative;
+}
+
+.contacts__contacts-list::after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/bg-triangle-white-footer.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 320px;
+  height: 70px;
 }
 
 .contacts-list__item {

@@ -1,4 +1,5 @@
 .advantages-item {
+  position: relative;
   background-color: @gray-color;
   background-image: url(../img/iphone-screen-mobile@1x.png);
   background-repeat: no-repeat;
@@ -9,10 +10,13 @@
   margin-bottom: 30px;
 }
 
-.advantages-item::before {
+.advantages-item__advantages-list::before {
   content: "";
   position: absolute;
   background-image: url(../img/bg-triangle-white.svg);
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 200px;
 }
 
 .advantages-item__advantages-list {
