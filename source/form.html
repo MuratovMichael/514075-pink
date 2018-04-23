@@ -41,8 +41,12 @@
       </div>
     </header>
     <main class="page-main">
+      <section class="city-intro">
+        <div class="container">
+          <h1 class="city-intro__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        </div>
+      </section>
       <section class="competition">
-        <h1 class="competition__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
         <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form-white">
             <p class="competition__text-top">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
@@ -54,7 +58,7 @@
             <input class="form-white__contacts" id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
           </fieldset>
           <fieldset class="form-gray">
-            <legend class="form-gray__text form-gray__text--pink">Ваши безбашенные достижения в путешествии</legend>
+            <h2 class="form-gray__text form-gray__text--pink">Ваши безбашенные достижения в путешествии</h2>
             <ul class="form-gray__list">
               <li class="form-gray__list-row">
                 <input class="form-gray__travels" id="selfie" type="checkbox" name="travels" checked>
@@ -83,14 +87,14 @@
             </ul>
           </fieldset>
           <fieldset class="form-white">
-            <legend class="form-white__text form-gray__text--pink">Контактная информация</legend>
+            <h2 class="form-white__text form-gray__text--pink">Контактная информация</h2>
             <label class="form-white__text form-white__text--pink" for="tel">Номер телефона</label>
             <input class="form-white__contacts" id="tel" type="text" name="tel" placeholder="Номер, пожалуйста">
             <label class="form-white__text form-white__text--pink" for="email">Адрес почты</label>
             <input class="form-white__contacts" id="email" type="text" name="email" placeholder="Введите почту">
           </fieldset>
           <fieldset class="form-gray">
-            <legend class="form-gray__text form-gray__text--pink">С каким приложением путешествовали?</legend>
+            <h2 class="form-gray__text form-gray__text--pink">С каким приложением путешествовали?</h2>
             <ul class="form-gray__list">
               <li class="form-gray__list-row">
               <input class="form-gray__attachment" id="ios" type="radio" name="attachment" value="ios" checked>
@@ -106,7 +110,7 @@
               </li>
             </ul>
           </fieldset>
-          <legend class="main-form__text main-form__text--pink" for="comments">Опишите свои эмоции</legend>
+          <h2 class="main-form__text main-form__text--pink" for="comments">Опишите свои эмоции</h2>
           <textarea class="main-form__comments" id="comments" name="comments" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           <button class="main-form__button" type="sumbit">Отправить форму</button>
           <p class="main-form__text-required">&#8212; Обязательные поля</p>
