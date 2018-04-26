@@ -42,7 +42,43 @@
   padding-right: 10px;
   padding-bottom: 25px;
   padding-left: 10px;
+}
 
+@media (min-width: @tablet-width) {
+  .download-attachment {
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-color: @bg-standart-color;
+  width: 660px;
+  margin: 0 auto;
+  padding-top: 525px;
+}
+}
+
+@media (min-width: @tablet-width) {
+  .download-attachment::before {
+  content: "";
+  position: absolute;
+  width: 660px;
+  height: 286px;
+  top: 175px;
+  background-image: url(../img/iphone-hand-mobile@1x.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+}
+
+@media (min-width: @tablet-width) {
+  .download-attachment::before {
+  content: "";
+  position: absolute;
+  width: 258px;
+  height: 286px;
+  top: 175px;
+  background-image: url(../img/iphone-hand-mobile@1x.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
 }
 
 

@@ -79,7 +79,7 @@
         </div>
       </section>
       <section class="advantages">
-        <div class="container">
+        <div class="advantages-container">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <p class="advantages__text">Устали от серости мегаполиса?</p>
           <p class="advantages__text">Нам есть, что вам предложить!</p>
@@ -98,23 +98,25 @@
                 <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
               </li>
               </ul>
-          </div>
+              </div>
           <div class="reviews">
-            <blockquote class="reviews-item">
-              <p class="reviews__author-name">Николай Петров</p>
-              <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
-              </p>
-            </blockquote>
-            <blockquote class="reviews-item reviews-item--none">
-              <p class="reviews__author-name">Николай Петров</p>
-              <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
-              </p>
-            </blockquote>
-            <blockquote class="reviews-item reviews-item--none">
-              <p class="reviews__author-name">Николай Петров</p>
-              <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
-              </p>
-            </blockquote>
+            <div class="reviews__container">
+              <blockquote class="reviews-item">
+                <p class="reviews__author-name">Николай Петров</p>
+                <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
+                </p>
+              </blockquote>
+              <blockquote class="reviews-item reviews-item--none">
+                <p class="reviews__author-name">Николай Петров</p>
+                <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
+                </p>
+              </blockquote>
+              <blockquote class="reviews-item reviews-item--none">
+                <p class="reviews__author-name">Николай Петров</p>
+                <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
+                </p>
+              </blockquote>
+            </div>
             <div class="slider slider-reviews">
               <button class="slider__toggle" type="button">1</button>
               <button class="slider__toggle" type="button">2</button>
@@ -125,39 +127,44 @@
       </section>
       <section class="hits">
         <div class="hits__container">
-          <table class="table-hits">
-            <thead class="table-thead">
-              <tr class="table-hits__row">
-                <th class="table-hits__head"></th>
-                <th class="table-hits__head">
-                  <p>База</p> <span>1,99 usd</span>
-                </th>
-                <th class="table-hits__head">
-                  <p>Стандарт</p> <span>3,99 usd</span>
-                </th>
-                <th class="table-hits__head">
-                  <p>Анлим</p> <span>9,99 usd</span>
-                </th>
-              </tr>
-            </thead>
-            <tbody class="table-body">
-              <tr class="table-hits__row">
-                <td class="table-hits__td table-hits__text">Розовый фильтр</td>
-                <td class="table-hits__td table-hits__yes">Розовый фильтр</td>
-                <td class="table-hits__td table-hits__yes">Розовый фильтр</td>
-              </tr>
-              <tr class="table-hits__row">
-                <td class="table-hits__td table-hits__text">Смайлики</td>
-                <td class="table-hits__td table-hits__no">Смайлики</td>
-                <td class="table-hits__td table-hits__yes">Смайлики</td>
-              </tr>
-              <tr class="table-hits__row">
-                <td class="table-hits__td table-hits__text">Комментарии</td>
-                <td class="table-hits__td table-hits__no">Комментарии</td>
-                <td class="table-hits__td table-hits__no">Комментарии</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-container">
+            <table class="table-hits">
+              <thead class="table-thead">
+                <tr class="table-hits__row">
+                  <th class="table-hits__head"></th>
+                  <th class="table-hits__head">
+                    <p>База</p> <span>1,99 usd</span>
+                  </th>
+                  <th class="table-hits__head">
+                    <p>Стандарт</p> <span>3,99 usd</span>
+                  </th>
+                  <th class="table-hits__head">
+                    <p>Анлим</p> <span>9,99 usd</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="table-body">
+                <tr class="table-hits__row">
+                  <td class="table-hits__td table-hits__text">Розовый фильтр</td>
+                  <td class="table-hits__td table-hits__yes">Розовый фильтр</td>
+                  <td class="table-hits__td table-hits__yes">Розовый фильтр</td>
+                  <td class="table-hits__td table-hits__yes">Розовый фильтр</td>
+                </tr>
+                <tr class="table-hits__row">
+                  <td class="table-hits__td table-hits__text">Смайлики</td>
+                  <td class="table-hits__td table-hits__no">Смайлики</td>
+                  <td class="table-hits__td table-hits__yes">Смайлики</td>
+                  <td class="table-hits__td table-hits__yes">Смайлики</td>
+                </tr>
+                <tr class="table-hits__row">
+                  <td class="table-hits__td table-hits__text">Комментарии</td>
+                  <td class="table-hits__td table-hits__no">Комментарии</td>
+                  <td class="table-hits__td table-hits__no">Комментарии</td>
+                  <td class="table-hits__td table-hits__no">Комментарии</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <div class="slider slider-hits">
             <button class="slider-hits__toggle" type="button">1</button>
             <button class="slider-hits__toggle" type="button">2</button>
@@ -166,7 +173,7 @@
         </div>
       </section>
       <section class="contacts">
-       <div class="container">
+       <div class="contacts__container">
         <p class="contacts__text">Остались вопросы? Свяжитесь с нами!</p>
         <ul class="contacts__contacts-list">
           <li class="contacts-list__item">

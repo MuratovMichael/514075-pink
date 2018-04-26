@@ -2,6 +2,11 @@
   position: relative;
 }
 
+.contacts__container {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .contacts__contacts-list::after {
   content: "";
   position: absolute;
@@ -21,3 +26,10 @@
   font-weight: lighter;
 }
 
+@media (min-width: @tablet-width) {
+  .contacts__text {
+    font-size: 40px;
+    width: 660px;
+    text-align: center;
+  }
+}
