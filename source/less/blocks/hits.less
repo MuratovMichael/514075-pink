@@ -1,4 +1,5 @@
 .hits {
+  position: relative;
   width: 320px;
   margin: 0 auto;
   background-color: @gray-color;
@@ -8,12 +9,12 @@
 .hits::before {
   content: "";
   position: absolute;
-  top: 1910px;
+  top: -120px;
   left: 0;
   background-image: url(../img/bg-triangle-white.svg);
   background-repeat: no-repeat;
   background-color: @gray-color;
-  width: 500px;
+  width: 100%;
   height: 200px;
 }
 

@@ -1,4 +1,16 @@
 .map {
+  position: relative;
   display: flex;
   justify-content: center;
+}
+
+.map::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  background-image: url(../img/bg-triangle-white-footer.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 100%;
+  height: 70px;
 }
