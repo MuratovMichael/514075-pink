@@ -5,7 +5,7 @@
 .first-block-reviews::before {
   content: "";
   position: absolute;
-  top: 0; 
+  top: 0;
   right: 20px;
   width: 140px;
   height: 36px;
@@ -30,6 +30,26 @@
 
 .reviews-wrapper__text {
   padding-left: 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .first-block-reviews__image {
+    width: 660px;
+    height: 509px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .first-block-reviews::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 140px;
+    height: 36px;
+    background-image: url(../img/panorama-day.jpg);
+    background-repeat: no-repeat;
+}
 }
 
 

@@ -37,6 +37,24 @@
 .table-hits__head {
   color: #ffffff;
   text-align: left;
+  boredr-left: 2px solid @white-color;
+  border-right: 2px solid @white-color;
+}
+
+.table-hits__head:nth-child(3) {
+  position: relative;
+}
+
+.table-hits__head:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 61px;
+  height: 61px;
+  background-image: url(../img/hit.png);
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 .standart__price {
