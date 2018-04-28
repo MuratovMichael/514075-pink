@@ -1,12 +1,120 @@
-.photo-card {
-  width: 280px;
-  margin: 0 auto;
+.photo-card__item {
+  position: relative;
+  background-color: @gray-color;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+
+.photo-card__item:last-child {
+  margin-bottom: 50px;
+}
+
+.photo-card__author-name {
+  color: @bg-standart-color;
+  font-weight: 700;
+  padding-left: 18px;
 }
 
 .photo-card__times-ago {
-  color: @gray-color;
+  color: @bg-standart-color;
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 24px;
+}
+
+.photo-card__text {
+  color: @bg-standart-color;
+  padding-right: 20px;
+  padding-left: 18px;
+  margin: 0;
 }
 
 .photo-card__like {
+  font-size: 12px;
+  line-height: 24px;
   color: @pink-color;
+  text-transform: uppercase;
+  padding-left: 50px;
+  background-image: url(../img/icon-heart.svg);
+  background-repeat: no-repeat;
+  background-position: 18px 0;
 }
+
+
+@media (min-width: @mobile-width) {
+  .photo-card {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo-card__item {
+    width: 280px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    margin-bottom: 70px;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo-card__image {
+    padding-bottom: 15px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo-card__item:nth-child(1n) .photo-card__text {
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo-card__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo-card__item:nth-child(2n) .photo-card__text {
+    padding-bottom: 35px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo-card__like {
+    display: block;
+    font-size: 12px;
+    line-height: 24px;
+    color: @pink-color;
+    text-transform: uppercase;
+    padding-left: 20px;
+    background-image: url(../img/icon-heart.svg);
+    background-repeat: no-repeat;
+    background-position: 240px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
