@@ -15,16 +15,18 @@
   margin-left: 20px;
 }
 
+.main-form__button:hover {
+  background-color: @button-green-hover;
+}
+
+.main-form__button:active {
+  color: @button-green-text;
+  background-color: @button-green-active;
+}
+
 .main-form__text--pink {
   color: @pink-color;
   text-align: center;
-}
-
-.main-form__comments {
-  width: 276px;
-  min-height: 197px;
-  border-radius: 2px;
-  margin-left: 20px;
 }
 
 .main-form__text-required {
@@ -33,4 +35,9 @@
   text-align: center;
   color: @bg-standart-color;
   text-transform: uppercase;
+}
+
+.main-form {
+  display: flex;
+  flex-direction: column;
 }

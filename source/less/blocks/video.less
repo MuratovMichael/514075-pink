@@ -39,9 +39,28 @@
   cursor: pointer;
 }
 
+.video__btn--post:hover {
+  color: @white-color;
+  background-color: @button-post-hover;
+}
+
+.video__btn--post:active {
+  color: @button-post-text;
+}
+
 .video__btn--cancel {
   border: 3px solid @social-button;
   color: @social-button;
+}
+
+.video__btn--cancel:hover {
+  border-color: @button-cancel-hover;
+  color: @button-cancel-hover;
+}
+
+.video__btn--cancel:active {
+  color: @button-cancel-text;
+  background-color: @button-cancel-hover;
 }
 
 @media (min-width: @tablet-width) {

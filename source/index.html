@@ -99,21 +99,31 @@
               </li>
             </ul>
           </div>
+          <div class="attachment-effect"> 
+            <div class="attachment-effect__container">
+              <div class="attachment-effect__block">
+                <p class="attachment-effect__text">Эффект <br>на 24 часа!</p >
+                <p class="attachment-effect__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+                <a href="#">Узнать больше об исследовании</a>
+              </div>
+            </div>
+          </div>
           <div class="reviews">
             <div class="reviews__container">
               <blockquote class="reviews-item">
-                <p class="reviews__author-name">Николай Петров</p>
-                <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
+                <p class="reviews-item__author-name">Николай Петров</p>
+                <p class="reviews-item__job">25 лет, водитель трамвая</p>
+                <p class="reviews-item__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
                 </p>
               </blockquote>
               <blockquote class="reviews-item reviews-item--none">
-                <p class="reviews__author-name">Николай Петров</p>
-                <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
+                <p class="reviews-item__author-name">Николай Петров</p>
+                <p class="reviews-item__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
                 </p>
               </blockquote>
               <blockquote class="reviews-item reviews-item--none">
-                <p class="reviews__author-name">Николай Петров</p>
-                <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
+                <p class="reviews-item__author-name">Николай Петров</p>
+                <p class="reviews-item__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
                 </p>
               </blockquote>
             </div>
@@ -195,7 +205,11 @@
         </div>
       </section>
       <section class="map">
-        <img src="img/bg-map-mobile@1x.png" width="320" height="645" alt="Карта">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/bg-map-desktop@2x.png, img/bg-map-desktop@3x.png">
+          <source media="(min-width: 660px)" srcset="img/bg-map-tablet@2x.png, img/bg-map-tablet@3x.png">
+          <img src="img/bg-map-mobile@1x.png" alt="Карта">
+        </picture>
       </section>
     </main>
     <footer class="main-footer">

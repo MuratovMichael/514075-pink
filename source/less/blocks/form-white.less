@@ -5,6 +5,7 @@
 
 .form-white__text--pink {
   font-size: 14px;
+  font-weight: 300;
   line-height: 30px;
   text-transform: uppercase;
   color: @pink-color;
@@ -18,9 +19,18 @@
   line-height: 30px;
   color: @bg-standart-color;
   padding-left: 20px;
-  margin-bottom: 40px;
   border: 2px solid @gray-color;
   border-radius: 3px;
+}
+
+.form-white__comments {
+  width: 276px;
+  min-height: 197px;
+  border-radius: 2px;
+  margin-left: 20px;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 10px 0 0 20px;
 }
 
 @media (min-width: @mobile-width) {
@@ -29,3 +39,69 @@
     flex-direction: column;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .form-white__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-white__contacts {
+    width: 100%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-white__text {
+    padding-right: 22px;
+    text-align: center;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-white {
+    margin-bottom: 50px;
+    border: 2px solid @gray-color;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-white__comments {
+    width: 496px;
+    margin: 0 auto;
+    border: 2px solid @gray-color;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-white-second.form-white__row {
+    width: 496px;
+    margin: 0 auto;
+  }
+}
+
+legend {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: @pink-color;
+  padding-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

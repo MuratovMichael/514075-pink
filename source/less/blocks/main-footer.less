@@ -10,6 +10,14 @@
   padding-bottom: 40px;
 }
 
+.main-footer__logo:hover path {
+  fill: @pink-color;
+}
+
+.main-footer__logo:active path {
+  fill: @border-social;
+}
+
 @media (min-width: @mobile-width) {
   .main-footer {
     max-height: 284px;
@@ -30,6 +38,16 @@
 @media (min-width: @tablet-width) {
   .main-footer__logo {
     margin-top: -10px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 660px;
+    margin: 0 auto;
   }
 }
 

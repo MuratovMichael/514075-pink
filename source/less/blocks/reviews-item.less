@@ -2,7 +2,7 @@
   display: none;
 }
 
-.reviews__author-name {
+.reviews-item__author-name {
   color: @black-color;
   font-size: 18px;
   line-height: 24px;
@@ -10,8 +10,20 @@
   font-weight: 700;
 }
 
-.reviews__text {
+.reviews-item__text {
   color: @bg-standart-color;
   text-align: center;
+}
+
+.reviews-item__job {
+  color: @bg-standart-color;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews-item__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
