@@ -6,9 +6,34 @@
 
 }
 
-.slider__toggle--active {
+.slider__toggle-active {
   height: 18px;
   border: 3px solid @bg-standart-color;
   background-color: @white-color;
 }
+
+.slider__general {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 1px solid @toggle-color;
+  background-color: @toggle-color;
+  cursor: pointer;
+  padding: 0;
+}
+
+.slider__general--active {
+  width: 10px;
+  height: 10px;
+  margin-top: -2px;
+  border: 2px solid @bg-standart-color;
+  background-color: @white-color;
+}
+
+@media (min-width: @tablet-width) {
+  .slider-hits {
+    display: none;
+  }
+}
+
 
