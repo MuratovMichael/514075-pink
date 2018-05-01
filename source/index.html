@@ -14,7 +14,10 @@
         <ul class="main-header__list">
           <li class="main-header__logo">
             <a class="main-header__link" class="#">
-              <img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg" width="" height="" alt="Логотип Пинк">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+                <img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg" width="" height="" alt="Логотип Пинк">
+              </picture>
             </a>
           </li>
           <li class="main-header__button">
@@ -40,7 +43,7 @@
         </nav>
       </div>
     </header>
-    <main class="page-main">
+    <main>
       <section class="download-attachment">
         <div class="download-attachment__container">
           <h1 class="visually-hidden">Скачать приложение Пинк</h1>

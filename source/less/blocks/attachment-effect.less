@@ -1,45 +1,5 @@
-@media (min-width: @tablet-width) {
-  .attachment-effect__text {
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 700;
-    color: @black-color;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .attachment-effect__description {
-    font-size: 14px;
-    line-height: 24px;
-    color: @bg-standart-color;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .attachment-effect__container {
-    width: 620px;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .attachment-effect__block {
-    width: 310px;
-    text-align: left;
-    margin-left: auto;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .attachment-effect__block a {
-    color: @pink-color;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .attachment-effect {
-    min-height: 300px;
-  }
+.attachment-effect {
+  display: none;
 }
 
 .attachment-effect__clock {
@@ -48,4 +8,45 @@
   background-repeat: no-repeat;
   background-position: left 410px, left;
   height: 276px;
+}
+
+@media (min-width: @tablet-width) {
+  .attachment-effect__text {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: @black-color;
+  }
+
+  .attachment-effect__description {
+    font-size: 14px;
+    line-height: 24px;
+    color: @bg-standart-color;
+  }
+
+  .attachment-effect__container {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .attachment-effect__block {
+    width: 310px;
+    text-align: left;
+    margin-left: auto;
+  }
+
+  .attachment-effect__block a {
+    color: @pink-color;
+  }
+
+  .attachment-effect {
+    min-height: 300px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .attachment-effect {
+    width: 960px;
+    background-color: red;
+  }
 }
