@@ -82,3 +82,25 @@
     justify-content: center;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .contacts__container {
+    width: 920px;
+    margin: 0 auto;
+  }
+
+  .contacts__contacts-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contacts-list__item:nth-child(2) {
+    order: 1;
+  }
+
+  .contacts__text {
+    padding: 0 180px;
+  }
+}

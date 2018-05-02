@@ -83,10 +83,6 @@
     padding-bottom: 35px;
   }
 
-  .photo-card__item:nth-child(6) {
-    padding-bottom: 135px;
-  }
-
   .photo-card__like {
     display: block;
     font-size: 12px;
@@ -98,4 +94,24 @@
     background-repeat: no-repeat;
     background-position: 240px;
   }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .photo-card__item {
+    padding-bottom: 20px;
+  }
+
+  .photo-card__item:nth-child(5) .photo-card__text {
+    padding-bottom: 35px;
+  }
+
+
 }

@@ -47,88 +47,90 @@
         </div>
       </section>
       <section class="competition">
-        <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="competition__text-top">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
-          <fieldset class="form-white form-white-first">
-            <div class="form-white__row">
-              <label class="form-white__text form-white__text--pink" for="surname">Фамилия</label>
-              <input class="form-white__contacts" id="surname" type="text" name="surname" placeholder="Укажите фамилию">
+        <div class="competition__container">
+          <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="competition__text-top">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+            <fieldset class="form-white form-white-first">
+              <div class="form-white__row">
+                <label class="form-white__text form-white__text--pink" for="surname">Фамилия</label>
+                <input class="form-white__contacts" id="surname" type="text" name="surname" placeholder="Укажите фамилию">
+              </div>
+              <div class="form-white__row">
+                <label class="form-white__text form-white__text--pink" for="name">Имя</label>
+                <input class="form-white__contacts" id="name" type="text" name="name" placeholder="Введите ваше имя">
+              </div>
+              <div class="form-white__row">
+                <label class="form-white__text form-white__text--pink" for="patronymic">Отчество</label>
+                <input class="form-white__contacts" id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+              </div>
+            </fieldset>
+            <fieldset class="form-gray form-gray-first">
+              <legend class="form-gray__text form-gray__text--pink">Ваши безбашенные достижения в путешествии</legend>
+              <ul class="form-gray__list">
+                <li class="form-gray__list-row">
+                  <input class="form-gray__travels" id="selfie" type="checkbox" name="travels" checked>
+                  <label class="form-gray__text form-gray__text--checkbox" for="selfie">Сделал селфи с акулой</label>
+                </li>
+                <li class="form-gray__list-row">
+                  <input class="form-gray__travels" id="beach" type="checkbox" name="travels" checked>
+                  <label class="form-gray__text form-gray__text--checkbox" for="beach">Обгорел на пляже</label>
+                </li>
+                <li class="form-gray__list-row">
+                  <input class="form-gray__travels" id="chuck-norris" type="checkbox" name="travels">
+                  <label class="form-gray__text form-gray__text--checkbox" for="chuck-norris">Видел Чака Норриса</label>
+                </li>
+                <li class="form-gray__list-row">
+                  <input class="form-gray__travels" id="souvenir" type="checkbox" name="travels">
+                  <label class="form-gray__text form-gray__text--checkbox" for="souvenir">Накупил сувениров</label>
+                </li>
+                <li class="form-gray__list-row">
+                  <input class="form-gray__travels" id="tower" type="checkbox" name="travels" checked>
+                  <label class="form-gray__text form-gray__text--checkbox" for="tower">Удержал башню</label>
+                </li>
+                <li class="form-gray__list-row">
+                  <input class="form-gray__travels" id="hotel" type="checkbox" name="travels">
+                  <label class="form-gray__text form-gray__text--checkbox" for="hotel">Разгромил отель</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form-white form-white-second">
+              <legend class="form-white__text form-gray__text--pink">Контактная информация</legend>
+              <div class="form-write__row">
+                <label class="form-white__text form-white__text--pink" for="tel">Номер телефона</label>
+                <input class="form-white__contacts" id="tel" type="text" name="tel" placeholder="Номер, пожалуйста">
+              </div>
+              <div class="form-write__row">
+                <label class="form-white__text form-white__text--pink" for="email">Адрес почты</label>
+                <input class="form-white__contacts" id="email" type="text" name="email" placeholder="Введите почту">
+              </div>
+            </fieldset>
+            <fieldset class="form-gray form-gray-second">
+              <legend class="form-gray__text form-gray__text--pink">С каким приложением путешествовали?</legend>
+              <ul class="form-gray__list">
+                <li class="form-gray__list-row">
+                <input class="form-gray__attachment" id="ios" type="radio" name="attachment" value="ios" checked>
+                <label class="form-gray__text form-gray__text--radio" for="ios">Pink для iOS</label>
+                </li>
+                <li class="form-gray__list-row">
+                <input class="form-gray__attachment" id="android" type="radio" name="attachment" value="android">
+                <label class="form-gray__text form-gray__text--radio" for="android">Pink для iOS</label>
+                </li>
+                <li class="form-gray__list-row">
+                <input class="form-gray__attachment" id="windows" type="radio" name="attachment" value="windows">
+                <label class="form-gray__text form-gray__text--radio" for="windows">Windows phone</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form-white form-white-third">
+              <legend class="form-white__text form-white__text--pink" for="comments">Опишите свои эмоции</legend>
+              <textarea class="form-white__comments" id="comments" name="comments" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </fieldset>
+            <div class="send-form">
+              <button class="main-form__button" type="sumbit">Отправить форму</button>
+              <p class="main-form__text-required"><supp>*</supp>&#8212; Обязательные поля</p>
             </div>
-            <div class="form-white__row">
-              <label class="form-white__text form-white__text--pink" for="name">Имя</label>
-              <input class="form-white__contacts" id="name" type="text" name="name" placeholder="Введите ваше имя">
-            </div>
-            <div class="form-white__row">
-              <label class="form-white__text form-white__text--pink" for="patronymic">Отчество</label>
-              <input class="form-white__contacts" id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
-            </div>
-          </fieldset>
-          <fieldset class="form-gray form-gray-first">
-            <legend class="form-gray__text form-gray__text--pink">Ваши безбашенные достижения в путешествии</legend>
-            <ul class="form-gray__list">
-              <li class="form-gray__list-row">
-                <input class="form-gray__travels" id="selfie" type="checkbox" name="travels" checked>
-                <label class="form-gray__text form-gray__text--checkbox" for="selfie">Сделал селфи с акулой</label>
-              </li>
-              <li class="form-gray__list-row">
-                <input class="form-gray__travels" id="beach" type="checkbox" name="travels" checked>
-                <label class="form-gray__text form-gray__text--checkbox" for="beach">Обгорел на пляже</label>
-              </li>
-              <li class="form-gray__list-row">
-                <input class="form-gray__travels" id="chuck-norris" type="checkbox" name="travels">
-                <label class="form-gray__text form-gray__text--checkbox" for="chuck-norris">Видел Чака Норриса</label>
-              </li>
-              <li class="form-gray__list-row">
-                <input class="form-gray__travels" id="souvenir" type="checkbox" name="travels">
-                <label class="form-gray__text form-gray__text--checkbox" for="souvenir">Накупил сувениров</label>
-              </li>
-              <li class="form-gray__list-row">
-                <input class="form-gray__travels" id="tower" type="checkbox" name="travels" checked>
-                <label class="form-gray__text form-gray__text--checkbox" for="tower">Удержал башню</label>
-              </li>
-              <li class="form-gray__list-row">
-                <input class="form-gray__travels" id="hotel" type="checkbox" name="travels">
-                <label class="form-gray__text form-gray__text--checkbox" for="hotel">Разгромил отель</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="form-white form-white-second">
-            <legend class="form-white__text form-gray__text--pink">Контактная информация</legend>
-            <div class="form-write__row">
-              <label class="form-white__text form-white__text--pink" for="tel">Номер телефона</label>
-              <input class="form-white__contacts" id="tel" type="text" name="tel" placeholder="Номер, пожалуйста">
-            </div>
-            <div class="form-write__row">
-              <label class="form-white__text form-white__text--pink" for="email">Адрес почты</label>
-              <input class="form-white__contacts" id="email" type="text" name="email" placeholder="Введите почту">
-            </div>
-          </fieldset>
-          <fieldset class="form-gray form-gray-second">
-            <legend class="form-gray__text form-gray__text--pink">С каким приложением путешествовали?</legend>
-            <ul class="form-gray__list">
-              <li class="form-gray__list-row">
-              <input class="form-gray__attachment" id="ios" type="radio" name="attachment" value="ios" checked>
-              <label class="form-gray__text form-gray__text--radio" for="ios">Pink для iOS</label>
-              </li>
-              <li class="form-gray__list-row">
-              <input class="form-gray__attachment" id="android" type="radio" name="attachment" value="android">
-              <label class="form-gray__text form-gray__text--radio" for="android">Pink для iOS</label>
-              </li>
-              <li class="form-gray__list-row">
-              <input class="form-gray__attachment" id="windows" type="radio" name="attachment" value="windows">
-              <label class="form-gray__text form-gray__text--radio" for="windows">Windows phone</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="form-white form-white-third">
-            <legend class="form-white__text form-white__text--pink" for="comments">Опишите свои эмоции</legend>
-            <textarea class="form-white__comments" id="comments" name="comments" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          </fieldset>
-          <div class="send-form">
-            <button class="main-form__button" type="sumbit">Отправить форму</button>
-            <p class="main-form__text-required"><supp>*</supp>&#8212; Обязательные поля</p>
-          </div>
-        </form>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="main-footer">
