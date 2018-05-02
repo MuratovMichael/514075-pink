@@ -3,10 +3,6 @@
   background-color: @gray-color;
 }
 
-.photo-card__item:last-child {
-  margin-bottom: 50px;
-}
-
 .photo-card__author-name {
   color: @bg-standart-color;
   font-weight: 700;
@@ -45,8 +41,7 @@
 
 .photo-card__item {
   margin-bottom: 20px;
-  padding-bottom: 15px;
-  padding-left: 20px;
+  padding-left: 20px
 }
 
 @media (min-width: @tablet-width) {
@@ -71,10 +66,6 @@
 
   .photo-card__item:nth-child(1n) .photo-card__text {
     padding-bottom: 10px;
-  }
-
-  .photo-card__item:last-child {
-    margin-bottom: 0;
   }
 
   .photo-card__item:nth-child(2n) .photo-card__text {
@@ -103,8 +94,12 @@
     margin: 0 auto;
   }
 
+  .photo-card__content {
+    min-height: 125px;
+  }
+
   .photo-card__item {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
 
   .photo-card__item:nth-child(5) .photo-card__text {
