@@ -32,31 +32,30 @@
   background-color: red;
 }
 
-@media(min-width: @mobile-width) {
-  .advantages-item {
-    position: relative;
-    background-color: @gray-color;
-    background-image: url(../img/iphone-screen-mobile@1x.png);
-    background-repeat: no-repeat;
-    background-position: center 650px;
-    background-size: 150px;
-    min-height: 250px;
-    padding: 180px 30px 300px 30px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    box-sizing: border-box;
-    width: 320px;
-  }
-
-  .advantages-item__advantages-list {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .advantages-list__item {
-    text-align: center;
-  }
+.advantages-item {
+  position: relative;
+  background-color: @gray-color;
+  background-image: url(../img/iphone-screen-mobile@1x.png);
+  background-repeat: no-repeat;
+  background-position: center 650px;
+  background-size: 150px;
+  min-height: 250px;
+  padding: 180px 30px 300px 30px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  width: 320px;
 }
+
+.advantages-item__advantages-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages-list__item {
+  text-align: center;
+}
+
 
 @media (min-width: @tablet-width) {
   .advantages-item {
