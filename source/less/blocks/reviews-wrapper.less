@@ -2,22 +2,36 @@
   background-color: @gray-color;
   margin-top: -6px;
   margin-bottom: 20px;
-  padding-bottom: 15px;
+  padding: 19px 0;
 }
 
 .reviews-wrapper__author-name {
   font-weight: 700;
+  padding-left: 17px;
   color: @bg-standart-color;
 }
 
 .reviews-wrapper__times-ago {
-  font-size: 100;
+  font-size: 12px;
+  text-transform: uppercase;
   color: @bg-standart-color;
 }
 
 .reviews-wrapper__text {
   color: @bg-standart-color;
+  padding: 0 0 8px 17px;
   margin: 0;
+}
+
+.reviews-wrapper__like {
+  font-size: 12px;
+  line-height: 24px;
+  color: @pink-color;
+  text-transform: uppercase;
+  padding-left: 50px;
+  background-image: url(../img/icon-heart.svg);
+  background-repeat: no-repeat;
+  background-position: 18px 3px;
 }
 
 @media (min-width: @tablet-width) {

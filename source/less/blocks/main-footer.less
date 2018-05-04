@@ -4,10 +4,15 @@
   align-items: center;
   background-color: @white-color;
   padding-top: 40px;
-}
+  max-height: 284px;
 
-.main-footer__logo {
-  padding-bottom: 40px;
+  &--none {
+    display: none;
+  }
+
+  &__logo {
+    padding-bottom: 40px;
+  }
 }
 
 .main-footer__logo:hover path {
@@ -16,11 +21,6 @@
 
 .main-footer__logo:active path {
   fill: @border-social;
-}
-
-.main-footer {
-  max-height: 284px;
-  display: none;
 }
 
 @media (min-width: @tablet-width) {

@@ -4,6 +4,17 @@
   border: none;
   background-color: @gray-color;
   padding-top: 40px;
+  padding-bottom: 32px;
+}
+
+.form-gray-first {
+  margin-bottom: 34px;
+}
+
+.form-gray-second {
+  margin-top: -4px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .form-gray__text {
@@ -44,14 +55,16 @@
 .form-gray__text--checkbox {
   position: relative;
   cursor: pointer;
-  padding-left: 60px;
+  padding-top: 3px;
+  padding-left: 75px;
+  margin-bottom: 10px;
 }
 
 .form-gray__text--checkbox::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -1px;
+  left: 5px;
   width: 35px;
   height: 35px;
   border: 2px solid @lightgray;
@@ -70,8 +83,8 @@
 .form-gray__travels:checked + .form-gray__text--checkbox::after {
   content: "";
   position: absolute;
-  top: 10px;
-  left: 8px;
+  top: 7px;
+  left: 15px;
   width: 20px;
   height: 10px;
   border: 2px solid @pink-color;
@@ -87,14 +100,15 @@
 .form-gray__text--radio {
   position: relative;
   cursor: pointer;
-  padding-left: 60px;
+  padding-left:76px;
+  padding-bottom: 5px;
 }
 
 .form-gray__text--radio::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -4px;
+  left: 6px;
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -113,8 +127,8 @@
 .form-gray__attachment:checked + .form-gray__text--radio::after {
   content: "";
   position: absolute;
-  top: 12px;
-  left: 12px;
+  top: 8px;
+  left: 20px;
   width: 14px;
   height: 14px;
   border-radius: 50%;

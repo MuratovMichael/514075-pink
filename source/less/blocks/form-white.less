@@ -8,26 +8,41 @@ legend {
 }
 
 .form-white {
+  display: flex;
+  flex-direction: column;
   border: none;
   background-color: @white-color;
+}
+
+.form-white-first {
+  margin-bottom: 0px;
+}
+
+.form-white-second {
+  margin-bottom: 0px;
 }
 
 .form-white__text--pink {
   font-size: 14px;
   font-weight: 300;
-  line-height: 30px;
+  text-align: center;;
   text-transform: uppercase;
   color: @pink-color;
-  padding-left: 20px;
+  padding-left: 30px;
+}
+
+.form-white__text--none {
+  display: none;
 }
 
 .form-white__contacts {
-  width: 270px;
+  width: 260px;
   height: 59px;
   font-size: 18px;
   line-height: 30px;
   color: @bg-standart-color;
   padding-left: 20px;
+  margin: 6px 0 20px 6px;
   border: 2px solid @gray-color;
   border-radius: 3px;
 }
@@ -41,13 +56,6 @@ legend {
   line-height: 30px;
   padding: 10px 0 0 20px;
 }
-
-
-.form-white {
-  display: flex;
-  flex-direction: column;
-}
-
 
 @media (min-width: @tablet-width) {
   .form-white__row {

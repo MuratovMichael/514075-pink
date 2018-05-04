@@ -1,5 +1,14 @@
+.photo-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 280px;
+  margin: 0 auto;
+}
+
 .photo-card__item {
   position: relative;
+  margin-bottom: 20px;
   background-color: @gray-color;
 }
 
@@ -21,6 +30,7 @@
   padding-right: 20px;
   padding-left: 18px;
   padding-bottom: 15px;
+  padding: 0 20px 8px 18px;
   margin: 0;
 }
 
@@ -33,22 +43,24 @@
   padding-bottom: 20px;
   background-image: url(../img/icon-heart.svg);
   background-repeat: no-repeat;
-  background-position: 18px 0;
+  background-position: 18px 1px;
 }
 
 .photo-card__content {
-  padding-bottom: 20px;
+  min-height: 125px;
+  padding-top: 12px;
 }
 
-.photo-card {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
+.photo-card__content {
+  min-height: 125px;
+  padding-top: 12px;
 }
-
-.photo-card__item {
-  margin-bottom: 20px;
-  padding-left: 20px
+/*.photo-card__content {
+  padding: 11px 0 20px 0;
+}
+*/
+.photo-card__image {
+  width: 100%;
 }
 
 @media (min-width: @tablet-width) {
