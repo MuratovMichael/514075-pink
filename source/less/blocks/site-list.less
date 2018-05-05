@@ -16,6 +16,16 @@
   text-transform: uppercase;
 }
 
+@media (min-width: @tablet-width) {
+  .site-list__link:hover {
+    color: @pink-color;
+  }
+
+  .site-list__link:active {
+    color: @site-list-active;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .site-list {
     display: flex;

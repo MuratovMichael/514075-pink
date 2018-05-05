@@ -2,6 +2,8 @@
   padding: 0;
   padding-top: 88px;
   padding-bottom: 29px;
+  width: 320px;
+  margin: 0 auto;
   background-color: @gray-color;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
@@ -13,7 +15,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   overflow: hidden;
 }
 
@@ -29,10 +30,6 @@
   border-collapse: collapse;
 }
 
-.hits__value {
-  border-right: 1px solid @white-color;
-}
-
 .hits__field {
   color: @bg-standart-color;
 }
@@ -43,6 +40,7 @@
   padding-top: 16px;
   padding-bottom: 20px;
   border-left: 2px solid @gray-color;
+  border-right: 1px solid @white-color;
 
   p {
     padding: 0;
@@ -139,6 +137,8 @@
 
 @media (min-width: @tablet-width) {
   .hits {
+    width:660px;
+    margin: 0 auto;
     padding-top: 87px;
     padding-bottom: 70px;
   }
@@ -210,6 +210,8 @@
 
 @media (min-width: @desktop-width) {
   .hits {
+    width: 960px;
+    margin: 0 auto;
     padding-bottom: 96px;
   }
 

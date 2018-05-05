@@ -1,4 +1,4 @@
-.range-toggle:active {
+.range-controls__toggle:active {
   background-color: @pink-color;
 }
 
@@ -7,7 +7,7 @@
     position: relative;
   }
 
-  .scale {
+  .range-controls__scale {
     position: absolute;
     top: -44px;
     left: 50px;
@@ -16,7 +16,7 @@
     background-color: @black-color;
   }
 
-  .range-toggle {
+  .range-controls__toggle {
     position: absolute;
     top: -52px;
     right: 60px;
@@ -28,7 +28,7 @@
     background-color: @white-color;
   }
 
-  .volume {
+  .range-controls--volume {
     position: absolute;
     top: -52px;
     left: 140px;
@@ -40,7 +40,7 @@
     background-color: @white-color;
   }
 
-  .fill {
+  .range-controls--fill {
     position: absolute;
     top: -52px;
     left: 70px;
@@ -54,7 +54,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .scale {
+  .range-controls__scale {
     position: absolute;
     top: -44px;
     left: 50px;
@@ -63,7 +63,7 @@
     background-color: @black-color;
   }
 
-  .range-toggle {
+  .range-controls__toggle {
     position: absolute;
     top: -52px;
     left: 80px;
@@ -75,7 +75,7 @@
     background-color: @white-color;
   }
 
-  .volume {
+  .range-controls--volume {
     position: absolute;
     top: -52px;
     left: 210px;
@@ -87,7 +87,7 @@
     background-color: @white-color;
   }
 
-  .fill {
+  .range-controls--fill {
     position: absolute;
     top: -52px;
     left: 280px;
@@ -98,6 +98,4 @@
     border: 2px solid @pink-color;
     background-color: @white-color;
   }
-
-
 }

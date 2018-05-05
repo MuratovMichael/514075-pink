@@ -84,8 +84,10 @@
       <section class="advantages">
         <div class="advantages__container">
           <h2 class="visually-hidden">Наши преимущества</h2>
-          <p class="advantages__text">Устали от серости мегаполиса?</p>
-          <p class="advantages__text">Нам есть, что вам предложить!</p>
+          <div class="advantages__block-text">
+            <p class="advantages__text">Устали от серости мегаполиса?</p>
+            <p class="advantages__text">Нам есть, что вам предложить!</p>
+          </div>
           <div class="advantages__wrapper">
             <ul class="advantages__list">
               <li class="advantages__item">
@@ -114,24 +116,24 @@
           </div>
           <div class="reviews">
             <div class="reviews__container">
-              <blockquote class="reviews-item">
-                <p class="reviews-item__author-name">Николай Петров</p>
-                <p class="reviews-item__job">25 лет, водитель трамвая</p>
-                <p class="reviews-item__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
+              <blockquote class="reviews__item">
+                <p class="reviews__author-name">Николай Петров</p>
+                <p class="reviews__job">25 лет, водитель трамвая</p>
+                <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
                 </p>
               </blockquote>
-              <blockquote class="reviews-item reviews-item--none">
-                <p class="reviews-item__author-name">Николай Петров</p>
-                <p class="reviews-item__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
+              <blockquote class="reviews__item reviews-item--hidden">
+                <p class="reviews__author-name">Николай Петров</p>
+                <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
                 </p>
               </blockquote>
-              <blockquote class="reviews-item reviews-item--none">
-                <p class="reviews-item__author-name">Николай Петров</p>
-                <p class="reviews-item__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
+              <blockquote class="reviews__item reviews-item--hidden">
+                <p class="reviews__author-name">Николай Петров</p>
+                <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
                 </p>
               </blockquote>
             </div>
-            <div class="slider slider-reviews">
+            <div class="slider slider--reviews">
               <button class="slider__general slider__general--active" type="button"></button>
               <button class="slider__general" type="button"></button>
               <button class="slider__general" type="button"></button>
@@ -181,7 +183,7 @@
                </tr>
              </tbody>
            </table>
-           <div class="slider slider-hits">
+           <div class="slider slider--hits">
              <button class="slider__general" type="button"></button>
              <button class="slider__general slider__general--active" type="button"></button>
              <button class="slider__general" type="button"></button>
@@ -190,21 +192,21 @@
      </section>
       <section class="contacts">
        <div class="contacts__container">
-        <p class="contacts__text">Остались вопросы? Свяжитесь с нами!</p>
-        <ul class="contacts__contacts-list">
-          <li class="contacts-list__item">
-            <b class="contacts-list__text contacts-list__text--bold">Звоните:
-            <span class="contacts-list__text contacts-list__text--pink">+7(812)555-66-66</span>
+        <p class="contacts__text-main">Остались вопросы? Свяжитесь с нами!</p>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <b class="contacts__text contacts__text--bold">Звоните:
+            <span class="contacts__text contacts__text--pink">+7(812)555-66-66</span>
             </b>
           </li>
-          <li class="contacts-list__item">
-            <b class="contacts-list__text contacts-list__text--bold">Пишите:
-            <span class="contacts-list__text contacts-list__text--pink">mail@htmlacademy.ru</span>
+          <li class="contacts__item">
+            <b class="contacts__text contacts__text--bold">Пишите:
+            <span class="contacts__text contacts__text--pink">mail@htmlacademy.ru</span>
             </b>
           </li>
-          <li class="contacts-list__item">
-            <b class="contacts-list__text contacts-list__text--bold">Приезжайте в гости:
-            <span class="contacts-list__text contacts-list__text--pink">ул. Большая Конюшенная, 19/8</span>
+          <li class="contacts__item">
+            <b class="contacts__text contacts__text--bold">Приезжайте в гости:
+            <span class="contacts__text contacts__text--pink">ул. Большая Конюшенная, 19/8</span>
             </b>
           </li>
         </ul>
@@ -212,8 +214,8 @@
       </section>
       <section class="map">
         <picture>
-          <source media="(min-width: 960px)" srcset="img/bg-map-desktop@2x.png, img/bg-map-desktop@3x.png">
-          <source media="(min-width: 660px)" srcset="img/bg-map-tablet@2x.png, img/bg-map-tablet@3x.png">
+          <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg, img/bg-map-desktop@2x.jpg">
+          <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg, img/bg-map-tablet@2x.jpg">
           <img src="img/bg-map-mobile@1x.png" alt="Карта">
         </picture>
       </section>

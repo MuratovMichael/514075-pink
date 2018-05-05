@@ -1,5 +1,6 @@
 .download-attachment__container {
   width: 320px;
+  margin-top: -20px;
 }
 
 .download-attachment__button {
@@ -8,26 +9,34 @@
   line-height: 18px;
   font-weight: 700;
   text-decoration: none;
-  padding-top: 12px;
-  padding-right: 30px;
-  padding-bottom: 12px;
-  padding-left: 30px;
-  margin-left: 30px;
+  padding: 12px 35px 12px 35px;
+  margin-bottom: 10px;
+  margin-left: 20px;
   border: 3px solid @white-color;
   border-radius: 40px;
+
+  &:hover {
+    color: @pink-color;
+    background-color: @white-color;
+  }
+
+  &:active {
+    color: @button-pink-active;
+  }
 }
 
 .download-attachment__list {
   .set-list(0, 0, none);
   background-color: @bg-standart-color;
-  width: 220px;
+  width: 205px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 60px;
   margin-left: 45px;
   margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 48px;
+  padding-bottom: 14px;
 }
 
 .download-attachment__text {
@@ -51,6 +60,7 @@
   width: 320px;
   margin: 0 auto;
   padding-top: 525px;
+  padding-bottom: 5px;
 }
 
 .download-attachment::before {
