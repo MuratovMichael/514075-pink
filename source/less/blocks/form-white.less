@@ -6,37 +6,29 @@
   max-width: 320px;
   margin: 0;
   padding: 0;
-
-  &__text--hidden {
-    display: none;
-  }
-
-  &__text--pink {
-    font-size: 14px;
-    font-weight: 300;
-    text-align: center;;
-    text-transform: uppercase;
-    color: @pink-color;
-    padding-left: 30px;
-  }
-
-  &--second {
-    margin-bottom: 0px;
-  }
-
-  &--third {
-    width: 320px;
-    margin: 0 auto;
-  }
 }
 
-/*.form-white__row {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
+.form-white__text--hidden {
+  display: none;
+}
+
+.form-white__text--pink {
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;;
+  text-transform: uppercase;
+  color: @pink-color;
+  padding-left: 30px;
+}
+
+.form-white--second {
+  margin-bottom: 0px;
+}
+
+.form-white--third {
   width: 320px;
   margin: 0 auto;
-}*/
+}
 
 .form-white__contacts {
   width: 280px;
@@ -73,42 +65,42 @@
   .form-white {
     margin-bottom: 50px;
     border: 2px solid @gray-color;
-
-    &__text--hidden {
-      display: block;
-    }
-
-    &--first {
-      width: 340px;
-      order: -3;
-      border: none;
-    }
-
-    &--second {
-      order: -1;
-      padding: 50px 0 50px 60px;
-    }
-
-    &--third {
-      padding: 50px 0 50px 0;
-    }
   }
-}
 
-.form-white__row {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 0 auto;
-}
+  .form-white__text--hidden {
+    display: block;
+  }
 
-.form-white__text {
-  padding-right: 22px;
-  text-align: center;
-}
+  .form-white--first {
+    width: 340px;
+    order: -3;
+    border: none;
+  }
 
-.form-white__comments {
-  border: 2px solid @gray-color;
+  .form-white--second {
+    order: -1;
+    padding: 50px 0 50px 60px;
+  }
+
+  .form-white--third {
+    padding: 50px 0 50px 0;
+  }
+
+  .form-white__row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+  }
+
+  .form-white__text {
+    padding-right: 22px;
+    text-align: center;
+  }
+
+  .form-white__comments {
+    border: 2px solid @gray-color;
+  }
 }
 
 @media (min-width: @desktop-width) {

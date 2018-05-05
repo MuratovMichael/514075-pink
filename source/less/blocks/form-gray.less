@@ -3,8 +3,9 @@
   flex-direction: column;
   border: none;
   background-color: @gray-color;
-  padding-top: 40px;
-  padding-bottom: 32px;
+  padding: 70px 0 40px 0;
+  /*padding-top: 40px;
+  padding-bottom: 32px;*/
 
   &--first {
     margin-bottom: 34px;
@@ -29,13 +30,14 @@
 }
 
 .form-gray__text--pink {
+  position: relative;
+  top: 40px;
   font-size: 14px;
   font-weight: 300;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
   color: @pink-color;
-  padding: 110px 30px 0 30px;
 }
 
 .form-gray__list {
@@ -158,7 +160,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .form-gray-first .form-gray__list {
+  .form-gray__list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
