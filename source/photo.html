@@ -14,12 +14,16 @@
         <ul class="main-header__list">
           <li class="main-header__logo">
             <a class="#">
-              <img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg" width="" height="" alt="Логотип Пинк">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
+              </picture>
             </a>
           </li>
           <li class="main-header__button">
             <img class="main-header__logo-image main-header__logo-image--burger" src="img/icon-menu-burger.svg" width="" height="" alt="Логотип Пинк">
-            <img class="main-header__logo-image" src="img/icon-menu-cross.svg" width="" height="" alt="Логотип Пинк">
+            <img class="main-header__logo-image main-header__logo-image--close" src="img/icon-menu-cross.svg" width="" height="" alt="Логотип Пинк">
           </li>
         </ul>
         <nav class="main-navigation">
@@ -168,7 +172,7 @@
                 </svg>
                 <div class="range-controls range-controls--contrast">
                   <div class="range-controls__scale"></div>
-                  <div class="range-controls__toggle range-controls__toggle--fill"></div>
+                  <div class="range-controls__toggle range-controls__toggle--contrast"></div>
                 </div>
               </li>
               <li class="video__item video__item--fill">
@@ -178,7 +182,7 @@
                 </svg>
                 <div class="range-controls range-controls--fill">
                   <div class="range-controls__scale"></div>
-                  <div class="range-controls__toggle range-controls__toggle--volume"></div>
+                  <div class="range-controls__toggle range-controls__toggle--fill"></div>
                 </div>
               </li>
             </ul>

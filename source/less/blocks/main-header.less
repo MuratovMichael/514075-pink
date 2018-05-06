@@ -31,17 +31,29 @@
 }
 
 @media (min-width: @tablet-width) {
+  .main-header__container {
+    width: 660px;
+    margin-left: 0;
+  }
+
   .main-header__list {
     width: 660px;
-    min-height: 70px;
     margin: 0 auto;
-    margin-left: -170px;
+    min-height: 70px;
     box-sizing: border-box;
   }
 
   .main-header__logo,
   .main-header__button {
     align-self: center;;
+  }
+
+  .main-header__logo-image--burger {
+    display: block;
+  }
+
+  .main-header__logo-image--close {
+    display: none;
   }
 }
 
@@ -59,9 +71,5 @@
 
   .main-header__button {
     display: none;
-  }
-
-  .main-header__logo {
-    padding-left: 130px;
   }
 }

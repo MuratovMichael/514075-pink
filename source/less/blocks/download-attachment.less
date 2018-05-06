@@ -25,6 +25,10 @@
   }
 }
 
+.download-attachment__text--hidden {
+  display: none;
+}
+
 .download-attachment__list {
   .set-list(0, 0, none);
   background-color: @bg-standart-color;
@@ -82,18 +86,21 @@
     background-color: @bg-standart-color;
     width: 660px;
     margin: 0 auto;
+    min-height: 210px;
     padding-top: 525px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
     }
   }
+
   .download-attachment::before {
     content: "";
     position: absolute;
     width: 660px;
     height: 550px;
     top: 191px;
+    z-index: 2;
     background-image: url(../img/iphone-hand-tablet@1x.png);
     background-repeat: no-repeat;
     background-position: left;
@@ -101,6 +108,20 @@
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/iphone-hand-tablet@2x.jpg");
     }
+  }
+
+  .download-attachment__container {
+    position: absolute;
+    z-index: 5;
+    margin-top: -150px;
+  }
+
+  .download-attachment__list {
+    background-color: transparent;
+  }
+
+  .download-attachment__text--hidden {
+    display: block;
   }
 }
 
