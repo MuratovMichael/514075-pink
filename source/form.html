@@ -10,11 +10,15 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container-absolute">
+      <div class="main-header__container">
         <ul class="main-header__list">
           <li class="main-header__logo">
             <a class="#">
               <picture>
+                <source type="image/webp" srcset="img/logo-pink-blue-desktop.svg">
+                <source type="image/webp" srcset="img/logo-pink-white-tablet.svg">
+                <source type="image/webp" src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
+
                 <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
                 <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
                 <img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
@@ -53,7 +57,7 @@
       <section class="competition">
         <div class="competition__container">
           <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
-            <p class="competition__text-top">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+            <p class="competition__text-top">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!Пожалуйста, заполните форму ниже:</p>
             <fieldset class="form-white form-white--first">
               <div class="form-white__row">
                 <label class="form-white__text form-white__text--pink" for="surname">Фамилия</label>
