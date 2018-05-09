@@ -41,29 +41,30 @@
     background-image: url(../img/icon-timer.svg);
     background-repeat: no-repeat;
     background-position: left top;
+    width: 238px;
+    height: 276px;
   }
 
   .attachment-effect__clock::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 55px;
+    left: 40px;
     border: 14px solid @pink-color;
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 175px;
+    height: 175px;
   }
 
   .attachment-effect__clock::after {
     content: "24";
     position: absolute;
-    top: 95px;
-    left: 55px;
+    top: 135px;
+    left: 75px;
     font-size: 100px;
     font-weight: 700;
     color: @pink-color;
   }
-
 }
 
 @media (min-width: @desktop-width) {
