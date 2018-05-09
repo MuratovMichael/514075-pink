@@ -100,8 +100,22 @@
   }
 
   .form-white--second .form-white__contacts {
-    width: 415px;
+    width: 435px;
   }
+
+  .form-white__row--email input {
+    position: relative;
+  }
+
+  .form-white__row--email input[name="email"]::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 63px;
+      height: 63px;
+      background-color: @gray-color;
+    }
 
   .form-white--second .form-white__text {
     padding-left: 13px;
@@ -118,6 +132,7 @@
   }
 
   .form-white__row {
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
