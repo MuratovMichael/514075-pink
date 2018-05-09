@@ -2,15 +2,13 @@
   display: none;
 }
 
-.attachment-effect__clock {
-  background-image: url(../img/icon-editor-diagram-fill.svg),
-                    url(../img/icon-timer.svg);
-  background-repeat: no-repeat;
-  background-position: left 410px, left;
-  height: 276px;
-}
-
 @media (min-width: @tablet-width) {
+  .attachment-effect {
+    position: relative;
+    display: block;
+    min-height: 300px;
+  }
+
   .attachment-effect__text {
     font-size: 30px;
     line-height: 36px;
@@ -39,9 +37,33 @@
     color: @pink-color;
   }
 
-  .attachment-effect {
-    min-height: 300px;
+  .attachment-effect__clock {
+    background-image: url(../img/icon-timer.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
   }
+
+  .attachment-effect__clock::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 14px solid @pink-color;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+
+  .attachment-effect__clock::after {
+    content: "24";
+    position: absolute;
+    top: 95px;
+    left: 55px;
+    font-size: 100px;
+    font-weight: 700;
+    color: @pink-color;
+  }
+
 }
 
 @media (min-width: @desktop-width) {

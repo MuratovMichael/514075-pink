@@ -43,13 +43,23 @@
     margin: 0 auto;
   }
 
-.reviews__job {
+  .reviews__job {
     display: block;
+    order: -1;
   }
 
   .reviews__text {
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .reviews__item {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .reviews__item--hidden {
+    display: none;
   }
 }
 

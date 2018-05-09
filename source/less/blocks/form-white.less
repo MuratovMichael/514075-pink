@@ -68,7 +68,7 @@
 
 @media (min-width: @tablet-width) {
   .form-white {
-    width: 620px;
+    max-width: 620px;
     margin-bottom: 50px;
     border: 2px solid @gray-color;
   }
@@ -79,12 +79,17 @@
 
   .form-white__text--hidden {
     display: block;
+    padding-right: 30;
   }
 
   .form-white--first {
     order: -3;
     border: none;
     margin-bottom: 40px;
+  }
+
+  .form-white--first .form-white__text--pink {
+    padding-right: 20px;
   }
 
   .form-white--second {
@@ -98,6 +103,10 @@
     width: 415px;
   }
 
+  .form-white--second .form-white__text {
+    padding-left: 13px;
+  }
+
   .form-white__contacts {
     width: 100%;
     margin-left: 0;
@@ -105,6 +114,7 @@
 
   .form-white--third {
     width: 620px;
+    margin-bottom: 67px;
   }
 
   .form-white__row {
