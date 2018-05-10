@@ -103,19 +103,36 @@
     width: 435px;
   }
 
-  .form-white__row--email input {
-    position: relative;
+  .form-white__row--email::before,
+  .form-white__row--phone::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 34px;
+    width: 64px;
+    height: 64px;
+    background-color: @gray-color;
   }
 
-  .form-white__row--email input[name="email"]::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 63px;
-      height: 63px;
-      background-color: @gray-color;
-    }
+  .form-white__row--phone::after {
+    content: "";
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    background-image: url(../img/icon-phone.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .form-white__row--email::before {
+    content: "";
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    background-image: url(../img/icon-mail.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
   .form-white--second .form-white__text {
     padding-left: 13px;

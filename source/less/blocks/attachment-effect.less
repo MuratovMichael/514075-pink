@@ -7,6 +7,7 @@
     position: relative;
     display: block;
     min-height: 300px;
+    margin-top: 58px
   }
 
   .attachment-effect__text {
@@ -20,6 +21,7 @@
     font-size: 14px;
     line-height: 24px;
     color: @bg-standart-color;
+    margin-top: -22px;
   }
 
   .attachment-effect__container {
@@ -32,10 +34,13 @@
     width: 310px;
     text-align: left;
     margin-left: auto;
+    margin-top: 10px;
   }
 
   .attachment-effect__content a {
     color: @pink-color;
+    margin-top: -5px;
+    display: block;
   }
 
   .attachment-effect__clock {
@@ -70,6 +75,47 @@
 
 @media (min-width: @desktop-width) {
   .attachment-effect {
-    width: 960px;
+    width: 1200px;
+    margin-top: 0;
+    background-color: @gray-color;
+  }
+
+  .attachment-effect__content {
+    width: 410px;
+    text-align: left;
+    margin-left: auto;
+    margin-top: 10px;
+  }
+
+  .attachment-effect__clock {
+    background-image: url(../img/icon-timer.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 300px;
+    width: 298px;
+    height: 345px;
+    margin-top: -20px;
+    margin-left: -160px;
+  }
+
+  .attachment-effect__clock::before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 155px;
+    border: 14px solid @pink-color;
+    border-radius: 50%;
+    width: 225px;
+    height: 225px;
+  }
+
+  .attachment-effect__clock::after {
+    content: "24";
+    position: absolute;
+    top: 160px;
+    left: 210px;
+    font-size: 120px;
+    font-weight: 700;
+    color: @pink-color;
   }
 }
