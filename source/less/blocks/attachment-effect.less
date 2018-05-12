@@ -74,6 +74,10 @@
     background-color: @gray-color;
   }
 
+  .attachment-effect__container {
+    width: 960px;
+  }
+
   .attachment-effect__text {
     font-size: 30px;
     line-height: 36px;
@@ -83,13 +87,13 @@
   }
 
   .attachment-effect__content {
-    text-align: left;
-    margin-left: 30px;
-    margin-top: 42px;
+    width: 550px;
+    margin-top: 0;
+    padding-top: 59px;
   }
 
   .attachment-effect__description {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
     color: @bg-standart-color;
     margin-top: -22px;
@@ -105,19 +109,18 @@
   .attachment-effect__clock {
     background-image: url(../img/icon-timer.svg);
     background-repeat: no-repeat;
-    background-position: left top;
+    background-position: 10px top;
     background-size: 300px;
-    width: 400px;
+    width: 345px;
     height: 355px;
-    margin-top: -20px;
-    margin-left: -160px;
+    margin: 0;
   }
 
   .attachment-effect__clock::before {
     content: "";
     position: absolute;
-    top: 50px;
-    left: 33px;
+    top: 70px;
+    left: 32px;
     border: 14px solid @pink-color;
     border-radius: 50%;
     width: 225px;
@@ -127,7 +130,7 @@
   .attachment-effect__clock::after {
     content: "24";
     position: absolute;
-    top: 155px;
+    top: 175px;
     left: 85px;
     font-size: 120px;
     font-weight: 700;

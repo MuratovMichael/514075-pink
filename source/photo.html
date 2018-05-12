@@ -15,9 +15,6 @@
           <li class="main-header__logo">
             <a class="#">
               <picture>
-                <source type="image/webp" srcset="img/logo-pink-blue-desktop.svg">
-                <source type="image/webp" srcset="img/logo-pink-white-tablet.svg">
-                <source type="image/webp" src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
                 <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
                 <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
                 <img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
@@ -50,7 +47,7 @@
     <main>
       <section class="photo-intro">
         <div class="photo-intro__container">
-          <h1 class="photo-intro__text">Фотографии пользователей</h1>
+          <h1 class="photo-intro__text photo-intro__text--photo">Фотографии пользователей</h1>
         </div>
       </section>
       <section class="photo-users">
@@ -59,9 +56,6 @@
         </div>
         <article class="first-block-reviews">
           <picture>
-            <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
-            <source type="image/webp" src="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
             <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
             <img class="first-block-reviews__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото пользователя">
@@ -77,11 +71,13 @@
         </article>
         <div class="photo-card">
           <article class="photo-card__item">
-            <picture>
-              <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg, img/photo-car-desktop@2x.jpg">
-              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg">
-              <img class="photo-card__image" src="img/photo-car-mobile@1x.jpg" alt="Фото дня">
-            </picture>
+            <a href="#">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg, img/photo-car-desktop@2x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg">
+                <img class="photo-card__image" src="img/photo-car-mobile@1x.jpg" alt="Фото дня">
+              </picture>
+            </a>
             <div class="photo-card__content">
               <b class="photo-card__author-name">Левон</b>
               <span class="photo-card__times-ago">(5 часов назад)</span>
@@ -90,11 +86,13 @@
             </div>
           </article>
           <article class="photo-card__item">
-            <picture>
-              <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg">
-              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg">
-              <img class="photo-card__image" src="img/photo-drumset-mobile@1x.jpg" alt="Фото дня">
-            </picture>
+            <a href="#">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg">
+                <img class="photo-card__image" src="img/photo-drumset-mobile@1x.jpg" alt="Фото дня">
+              </picture>
+            </a>
             <div class="photo-card__content">
               <b class="photo-card__author-name">Антон</b>
               <span class="photo-card__times-ago">(12 часов назад)</span>
@@ -103,11 +101,13 @@
             </div>
           </article>
           <article class="photo-card__item">
-            <picture>
-              <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg">
-              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg">
-              <img class="photo-card__image" src="img/photo-window-mobile@1x.jpg" alt="Окно">
-            </picture>
+            <a href="#">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg">
+                <img class="photo-card__image" src="img/photo-window-mobile@1x.jpg" alt="Окно">
+              </picture>
+            </a>
             <div class="photo-card__content">
               <b class="photo-card__author-name">Борис</b>
               <span class="photo-card__times-ago">(20 часов назад)</span>
@@ -116,11 +116,13 @@
             </div>
           </article>
           <article class="photo-card__item">
-            <picture>
-              <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desctop@2x.jpg">
-              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg">
-              <img class="photo-card__image" src="img/photo-fair-mobile@1x.jpg" alt="Кубанская бахча">
-            </picture>
+            <a href="#">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desctop@2x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg">
+                <img class="photo-card__image" src="img/photo-fair-mobile@1x.jpg" alt="Кубанская бахча">
+              </picture>
+            </a>
             <div class="photo-card__content">
               <b class="photo-card__author-name">Сергей</b>
               <span class="photo-card__times-ago">(25 часов назад)</span>
@@ -129,43 +131,44 @@
             </div>
           </article>
           <article class="photo-card__item">
-            <picture>
-              <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg, img/photo-pov-desctop@2x.jpg">
-              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg">
-              <img class="photo-card__image" src="img/photo-pov-mobile@1x.jpg" alt="Фото дня">
-            </picture>
+            <a href="#">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg, img/photo-pov-desctop@2x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg">
+                <img class="photo-card__image" src="img/photo-pov-mobile@1x.jpg" alt="Фото дня">
+              </picture>
+            </a>
             <div class="photo-card__content">
               <b class="photo-card__author-name">Максим</b>
               <span class="photo-card__times-ago">(40 часов назад)</span>
               <p class="photo-card__text">Где снег-то?</p>
               <span class="photo-card__like">Нравится: 150</span>
             </div>
+
           </article>
           <article class="photo-card__item">
-            <picture>
-              <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg, img/photo-wing-desctop@2x.jpg">
-              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg">
-              <img class="photo-card__image" src="img/photo-wing-mobile@1x.jpg" alt="Рассвет">
-            </picture>
-            <div class="photo-card__content">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg, img/photo-wing-desctop@2x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg">
+                <img class="photo-card__image" src="img/photo-wing-mobile@1x.jpg" alt="Рассвет">
+              </picture>
+            </a>
+              <div class="photo-card__content">
               <b class="photo-card__author-name">Надежда</b>
               <span class="photo-card__times-ago">(45 часов назад)</span>
               <p class="photo-card__text">Всем GM и взаимные лайки!</p>
               <span class="photo-card__like">Нравится: 2560</span>
-            </div>
+              </div>
           </article>
         </div>
         <p class="photo-users__text photo-users__text--bottom">Затмите их всех! <br>Вкладывая всё, что накопилось в телефоне!</p>
         <section class="video">
           <picture>
-            <source type="image/webp" srcset="img/photo-road-desktop@1x.jpg">
-            <source type="image/webp" srcset="img/photo-road-tablet@1x.jpg">
-            <source type="image/webp" src="img/photo-road-mobile@1x.jpg" alt="Логотип Пинк">
-            <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg"
+            <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg">
             <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg">
-            <img class="video__image" src="img/photo-road-mobile@1x.jpg" alt="Дорога">
+            <img class="video__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@1x.jpg" alt="Дорога">
           </picture>
-
           <div class="video__controls">
             <ul class="video__list">
               <li class="video__item video__item--crop">

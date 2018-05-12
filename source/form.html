@@ -15,10 +15,6 @@
           <li class="main-header__logo">
             <a class="#">
               <picture>
-                <source type="image/webp" srcset="img/logo-pink-blue-desktop.svg">
-                <source type="image/webp" srcset="img/logo-pink-white-tablet.svg">
-                <source type="image/webp" src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
-
                 <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
                 <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
                 <img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
@@ -73,7 +69,7 @@
               </div>
             </fieldset>
             <fieldset class="form-gray form-gray--first">
-              <legend class="form-gray__text form-gray__text--pink">Ваши безбашенные достижения в путешествии</legend>
+              <h2 class="form-gray__text form-gray__text--pink">Ваши безбашенные достижения в путешествии</h2>
               <ul class="form-gray__list">
                 <li class="form-gray__list-row">
                   <input class="form-gray__travels" id="selfie" type="checkbox" name="travels" checked>
@@ -102,18 +98,20 @@
               </ul>
             </fieldset>
             <fieldset class="form-white form-white--second">
-              <legend class="form-white__text form-white__text--pink form-white__text--hidden">Контактная информация</legend>
-              <div class="form-white__row form-white__row--phone">
-                <label class="form-white__text form-white__text--pink" for="tel">Номер телефона</label>
-                <input class="form-white__contacts" id="tel" type="text" name="tel" placeholder="Номер, пожалуйста">
-              </div>
-              <div class="form-white__row form-white__row--email">
-                <label class="form-white__text form-white__text--pink" for="email">Адрес почты</label>
-                <input class="form-white__contacts" id="email" type="text" name="email" placeholder="Введите почту">
+              <h2 class="form-white__text form-white__text--pink form-white__text--hidden">Контактная информация</h2>
+              <div class="form-white__contact-block">
+                <div class="form-white__row form-white__row--phone">
+                  <label class="form-white__text form-white__text--pink" for="tel">Номер телефона</label>
+                  <input class="form-white__contacts" id="tel" type="text" name="tel" placeholder="Номер, пожалуйста">
+                </div>
+                <div class="form-white__row form-white__row--email">
+                  <label class="form-white__text form-white__text--pink" for="email">Адрес почты</label>
+                  <input class="form-white__contacts" id="email" type="text" name="email" placeholder="Введите почту">
+                </div>
               </div>
             </fieldset>
             <fieldset class="form-gray form-gray--second">
-              <legend class="form-gray__text form-gray__text--pink">С каким приложением путешествовали?</legend>
+              <h2 class="form-gray__text form-gray__text--pink">С каким приложением путешествовали?</h2>
               <ul class="form-gray__list">
                 <li class="form-gray__list-row">
                 <input class="form-gray__attachment" id="ios" type="radio" name="attachment" value="ios" checked>
@@ -130,7 +128,7 @@
               </ul>
             </fieldset>
             <fieldset class="form-white form-white--third">
-              <legend class="form-white__text form-white__text--pink" for="comments">Опишите свои эмоции</legend>
+              <h2 class="form-white__text form-white__text--pink" for="comments">Опишите свои эмоции</h2>
               <textarea class="form-white__comments" id="comments" name="comments" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
             <div class="send-form">

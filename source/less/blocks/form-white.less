@@ -188,11 +188,19 @@
    flex-direction: row;
    max-width: 876px;
    width: 100%;
+   padding-bottom: 0;
+ }
+
+ .form-white--first {
+   order: -3;
+   border: none;
+   margin-bottom: 20px;
  }
 
  .form-white--third {
    width: 940px;
    box-sizing: border-box;
+   margin-top: 10px;
  }
 
  .form-white__comments {
@@ -207,11 +215,53 @@
    margin-left: 0;
  }
 
+ .form-white__contact-block {
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+ }
+
  .form-white__row {
    width: 433px;
  }
 
  .form-white--second .form-white__contacts {
-   width: 312px;
+   width: 290px;
+ }
+
+ .form-white__contacts[name="tel"] {
+   margin-left: -3px;
+   margin-top: 0;
+ }
+
+ .form-white__contacts[name="email"] {
+   margin-left: 7px;
+   margin-top: 0;
+ }
+
+ .form-white__row--email::before,
+ .form-white__row--phone::after {
+   content: "";
+   position: absolute;
+   top: 0px;
+   right: 60px;
+   width: 64px;
+   height: 64px;
+   background-color: @gray-color;
+ }
+
+ h2.form-white__text--pink {
+   position: relative;
+   top: -25px;
+   left: 295px;
+   font-size: 14px;
+   font-weight: 300;
+   line-height: 18px;
+   text-align: center;
+   display: flex;
+   text-transform: uppercase;
+   padding: 0 40px;
+   color: @pink-color;
+   background-color: @white-color;
  }
 }
