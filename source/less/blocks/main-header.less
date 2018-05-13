@@ -25,6 +25,19 @@
   height: 23px;
 }
 
+.main-header__link-mobile {
+  width: 75px;
+  height: 23px;
+}
+
+.main-header__link-tablet {
+  display: none;
+}
+
+.main-header__link-desktop {
+  display: none;
+}
+
 .main-header__container {
   position: absolute;
   width: 320px;
@@ -83,6 +96,20 @@
     background-color: rgba(0, 0, 0, 0.4);
   }
 
+  .main-header__link-mobile {
+    display: none;
+  }
+
+  .main-header__link-tablet {
+    display: block;
+    width: 146px;
+    height: 40px;
+  }
+
+  .main-header__link-desktop {
+    display: none;
+  }
+
   .main-header__logo,
   .main-header__button {
     align-self: center;;
@@ -116,6 +143,20 @@
     align-self: flex-start;
     padding-top: 8px;
     margin-left: -10px;
+  }
+
+  .main-header__link-mobile {
+    display: none;
+  }
+
+  .main-header__link-tablet {
+    display: block;
+  }
+
+  .main-header__link-desktop {
+    display: block;
+    width: 146px;
+    height: 40px;
   }
 
   .main-header__list {
