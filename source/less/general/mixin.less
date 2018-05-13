@@ -16,17 +16,17 @@
 }
 
 .media(@screen; @rules) {
-
 & when (@screen = tablet) {
- @media (min-width: @tablet-width) {
-   @rules();
- }
+
+  @media (min-width: @tablet-width) {
+    @rules();
+    }
 }
   & when (@screen = desktop) {
- @media (min-width: @desktop-width) {
-   @rules();
- }
-}
+  @media (min-width: @desktop-width) {
+    @rules();
+    }
+  }
 }
 
 .container() {

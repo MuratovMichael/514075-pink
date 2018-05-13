@@ -1,3 +1,62 @@
+.download-attachment__container {
+  width: 320px;
+  margin-top: -20px;
+}
+
+.download-attachment__button {
+  color: @white-text;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 12px 35px 12px 35px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  border: 3px solid @white-color;
+  border-radius: 40px;
+
+  &:hover {
+    color: @pink-color;
+    background-color: @white-color;
+  }
+
+  &:active {
+    color: @button-pink-active;
+  }
+}
+
+.download-attachment__text--hidden {
+  display: none;
+}
+
+.download-attachment__list {
+  .set-list(0, 0, none);
+  background-color: @bg-standart-color;
+  width: 205px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  margin-left: 45px;
+  margin: 0 auto;
+  padding-top: 48px;
+  padding-bottom: 14px;
+}
+
+.download-attachment__text {
+  color: @white-text;
+  font-weight: 300;
+  text-align: center;
+  font-weight: 100;
+  padding-top: 0;
+  padding-right: 10px;
+  padding-bottom: 25px;
+  padding-left: 10px;
+  width: 280px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
 .download-attachment {
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
@@ -5,6 +64,7 @@
   width: 320px;
   margin: 0 auto;
   padding-top: 525px;
+  padding-bottom: 5px;
 }
 
 .download-attachment::before {
@@ -18,61 +78,161 @@
   background-position: left;
 }
 
-.download-attachment__container {
-  width: 340px;
-}
-
-.download-attachment__button {
-  color: @white-text;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 700;
-  text-decoration: none;
-  padding-top: 12px;
-  padding-right: 25px;
-  padding-bottom: 12px;
-  padding-left: 25px;
-  margin-left: 35px;
-  border: 3px solid @white-color;
-  border-radius: 40px;
-}
-
-.download-attachment__text {
-  color: @white-text;
-  font-weight: 300;
-  text-align: center;
-  font-weight: 100;
-  padding-top: 0;
-  padding-right: 10px;
-  padding-bottom: 25px;
-  padding-left: 10px;
-}
-
 @media (min-width: @tablet-width) {
   .download-attachment {
-  background-image: url(../img/bg-back-mobile@1x.jpg);
-  background-repeat: no-repeat;
-  background-color: @bg-standart-color;
-  width: 660px;
-  margin: 0 auto;
-  padding-top: 525px;
-}
-}
+    background-image: url(../img/bg-back-tablet@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: -340px top;
+    background-color: @bg-standart-color;
+    background-size: cover;
+    width: 660px;
+    margin: 0 auto;
+    min-height: 195px;
+    padding-top: 525px;
+    padding-bottom: 20px;
 
-@media (min-width: @tablet-width) {
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+
   .download-attachment::before {
-  content: "";
-  position: absolute;
-  width: 660px;
-  height: 286px;
-  top: 175px;
-  background-image: url(../img/iphone-hand-mobile@1x.png);
-  background-repeat: no-repeat;
-  background-position: left;
+    content: "";
+    position: absolute;
+    width: 660px;
+    height: 550px;
+    top: 190px;
+    z-index: 2;
+    background-image: url(../img/iphone-hand-tablet@1x.png);
+    background-repeat: no-repeat;
+    background-position: left;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.jpg");
+    }
 }
+    .download-attachment__button {
+      color: @white-text;
+      font-size: 18px;
+      line-height: 18px;
+      font-weight: 700;
+      text-decoration: none;
+      padding: 12px 45px 12px 45px;
+      margin-bottom: 10px;
+      margin-left: 20px;
+      border: 3px solid @white-color;
+      border-radius: 40px;
+  }
+
+  .download-attachment__container {
+    position: absolute;
+    z-index: 5;
+    margin-top: -345px;
+  }
+
+  .download-attachment__list {
+    padding-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: transparent;
+  }
+
+  .download-attachment__text--hidden {
+    display: block;
+    font-size: 40px;
+    line-height: 50px;
+    color: @white-color;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-left: 34px;
+  }
+
+  .download-attachment__text {
+    font-size: 18px;
+    font-weight: 300;
+    padding-left: 12px;
+    width: 330px;
+  }
 }
 
+@media (min-width: @desktop-width) {
+  .download-attachment {
+    position: relative;
+    background-image: url(../img/bg-back-desktop@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-color: @bg-standart-color;
+    width: 960px;
+    min-height: 310px;
+    margin: 0 auto;
+    padding-top: 525px;
+    margin-bottom: 15px;
+    z-index: 5;
 
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+  }
 
+  .download-attachment::before {
+    content: "";
+    position: absolute;
+    top: 210px;
+    right: 30px;
+    width: 760px;
+    height: 645px;
+    background-image: url(../img/iphone-hand-desktop@1x.png);
+    background-repeat: no-repeat;
+    background-position: center;
 
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.jpg");
+    }
+  }
 
+  .download-attachment__container {
+    position: absolute;
+    z-index: 5;
+    margin-top: -345px;
+    margin-left: 100px;
+    width: 400px;
+  }
+
+  .download-attachment__text--hidden {
+    display: block;
+    font-size: 48px;
+    line-height: 60px;
+    color: @white-color;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 28px;
+    margin-left: -300px;
+  }
+
+  .download-attachment__button {
+    color: @white-text;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 12px 47px 12px 47px;
+    margin-left: -90px;
+    border: 3px solid @white-color;
+    border-radius: 40px;
+  }
+
+  .download-attachment__list {
+    margin-top: 32px;
+    margin-left: -65px;
+    margin-bottom: 35px;
+    background-color: transparent;
+  }
+
+  .download-attachment__text {
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: -110px;
+    width: 330px;
+  }
+}

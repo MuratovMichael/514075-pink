@@ -5,6 +5,31 @@
 .copyright__developed {
   color: @bg-standart-color;
   line-height: 18px;
-  padding-top: 5px;
-  padding-right: 15px;
+  padding: 5px 15px 30px 25px;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    margin: 0;
+    margin-top: 5px;
+
+    &:hover {
+      fill: @bg-standart-color;
+    }
+
+    &:active {
+      fill: @border-social;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright {
+    margin-right: -10px;
+    margin-top: 25px;
+  }
+
+  .copyright__developed {
+    font-size: 18px;
+  }
 }

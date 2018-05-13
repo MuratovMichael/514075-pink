@@ -13,9 +13,100 @@
   line-height: 24px;
   text-align: center;
   font-weight: 700;
- }
+  }
 
-.reviews__text {
+.reviews__job {
+  display: none;
   color: @bg-standart-color;
   text-align: center;
+}
+
+.reviews__text {
+  font-size: 14px;
+  line-height: 30px;
+  color: @bg-standart-color;
+  text-align: center;
+}
+
+.reviews__item {
+  margin: 0;
+  padding: 0 20px;
+}
+
+.reviews__item--hidden {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__container {
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .reviews__job {
+    display: block;
+    order: -1;
+    margin-top: -10px;
+    margin-left: -5px;
+  }
+
+  .reviews__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .reviews__item {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left: 30px;
+  }
+
+  .reviews__item--hidden {
+    display: none;
+  }
+
+  .reviews__author-name {
+    padding-top: 2px;
+    margin-left: -25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews {
+    padding-top: 165px;
+    padding-bottom: 30px;
+    background-image: url(../img/icon-quotes.svg);
+    background-repeat: no-repeat;
+    background-position: center 70px;
+  }
+
+  .reviews__container {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .reviews__item {
+    padding: 0 100px;
+  }
+
+  .reviews__job {
+    display: block;
+    font-size: 18px;
+    margin-top: -15px;
+  }
+
+  .reviews__author-name {
+    color: @black-color;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 0;
+    padding-left: 25px;
+  }
+
+  .reviews__text {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

@@ -2,6 +2,11 @@
   position: relative;
 }
 
+.first-block-reviews__container {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .first-block-reviews::before {
   content: "";
   position: absolute;
@@ -13,33 +18,12 @@
   background-repeat: no-repeat;
 }
 
-.reviews-wrapper__like {
-  font-size: 12px;
-  line-height: 24px;
-  color: @pink-color;
-  text-transform: uppercase;
-  padding-left: 50px;
-  background-image: url(../img/icon-heart.svg);
-  background-repeat: no-repeat;
-  background-position: 18px 0;
-}
-
-.reviews-wrapper__author-name {
-  padding-left: 18px;
-}
-
-.reviews-wrapper__text {
-  padding-left: 18px;
-}
-
 @media (min-width: @tablet-width) {
   .first-block-reviews__image {
     width: 660px;
     height: 509px;
   }
-}
 
-@media (min-width: @tablet-width) {
   .first-block-reviews::before {
     content: "";
     position: absolute;
@@ -49,10 +33,22 @@
     height: 36px;
     background-image: url(../img/panorama-day.jpg);
     background-repeat: no-repeat;
+  }
+
+  .first-block-reviews {
+    margin-bottom: 6px;
+  }
 }
+
+@media (min-width: @desktop-width) {
+  .first-block-reviews {
+    margin: 0 auto;
+    margin-bottom: 55px;
+  }
+
+  .first-block-reviews__image {
+    width: 960px;
+    height: 506px;
+    margin: 0 auto;
+  }
 }
-
-
-
-
-

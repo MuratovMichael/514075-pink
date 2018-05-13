@@ -1,31 +1,288 @@
 .form-white {
+  display: flex;
+  flex-direction: column;
   border: none;
   background-color: @white-color;
+  max-width: 320px;
+  margin: 0;
+  padding: 0;
+}
+
+.form-white__text--hidden {
+  display: none;
 }
 
 .form-white__text--pink {
   font-size: 14px;
-  line-height: 30px;
+  font-weight: 300;
+  text-align: center;;
   text-transform: uppercase;
   color: @pink-color;
+  padding-bottom: 12px;
   padding-left: 20px;
 }
 
+.form-white--second {
+  margin-bottom: 0px;
+}
+
+.form-white--third {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .form-white__contacts {
-  width: 270px;
+  width: 260px;
   height: 59px;
   font-size: 18px;
   line-height: 30px;
   color: @bg-standart-color;
   padding-left: 20px;
-  margin-bottom: 40px;
+  margin: 12px 0 20px 18px;
   border: 2px solid @gray-color;
   border-radius: 3px;
+
+  &:hover {
+    border-color: @black-color;
+  }
+
+  &:active {
+    border-color: @pink-color;
+  }
 }
 
-@media (min-width: @mobile-width) {
+.form-white__row {
+  margin-bottom: -3px;
+}
+
+.form-white__comments {
+  width: 260px;
+  margin: 0 auto;
+  min-height: 190px;
+  border-radius: 2px;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 10px 0 0 20px;
+  margin-bottom: 48px;
+}
+
+@media (min-width: @tablet-width) {
   .form-white {
+    display: block;
+    max-width: 620px;
+    margin-bottom: 50px;
+    border: 2px solid @gray-color;
+  }
+
+  .form-white__text--pink {
+    padding-left: 20px;
+  }
+
+  .form-white__text--hidden {
+    display: block;
+    padding-right: 30;
+  }
+
+  .form-white--first {
+    order: -3;
+    border: none;
+    margin-bottom: 40px;
+  }
+
+  .form-white--first .form-white__text--pink {
+    padding-right: 20px;
+  }
+
+  .form-white--second {
+    position: relative;
+    order: -1;
+    padding: 20px 0 27px 60px;
+    margin-bottom: 60px;
+  }
+
+  .form-white--second .form-white__contacts {
+    width: 435px;
+  }
+
+  .form-white__row--email::before,
+  .form-white__row--phone::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 34px;
+    width: 64px;
+    height: 64px;
+    background-color: @gray-color;
+  }
+
+  .form-white__row--phone::after {
+    content: "";
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    background-image: url(../img/icon-phone.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .form-white__row--email::before {
+    content: "";
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    background-image: url(../img/icon-mail.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .form-white--second .form-white__text {
+    padding-left: 13px;
+  }
+
+  .form-white__contacts {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .form-white--third {
+    width: 620px;
+    margin-bottom: 67px;
+  }
+
+  .form-white__row {
+    position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 17px;
+    width: 100%;
+  }
+
+  .form-white__row--email,
+  .form-white__row--phone {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .form-white__row:last-child {
+    margin-bottom: 0;
+  }
+
+  .form-white__text {
+    padding: 0;
+    padding-right: 20px;
+    margin-top: -7px;
+    text-align: center;
+  }
+
+  .form-white__comments {
+    width: 470px;
+    margin: 35px 60px 40px 60px;
+    border: 2px solid @gray-color;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-white {
+    display: block;
+  }
+
+  .main-form .form-white--second {
+    display: flex;
+    flex-direction: row;
+    max-width: 876px;
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  .form-white--first {
+    order: -3;
+    border: none;
+    margin-bottom: 20px;
+  }
+
+  .form-white--third {
+    width: 940px;
+    box-sizing: border-box;
+    margin-top: 10px;
+  }
+
+  .form-white__comments {
+    width: 790px;
+    margin: 35px 60px 40px 58px;
+    border: 2px solid @gray-color;
+  }
+
+  .form-white__contacts {
+    width: auto;
+    flex-grow: 1;
+    margin-left: 0;
+  }
+
+  .form-white__contact-block {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .form-white__row {
+    width: 433px;
+  }
+
+  .form-white--second .form-white__contacts {
+    width: 290px;
+  }
+
+  .form-white__contacts[name="tel"] {
+    margin-left: -3px;
+    margin-top: 0;
+  }
+
+  .form-white__contacts[name="email"] {
+    margin-left: 7px;
+    margin-top: 0;
+  }
+
+  .form-white__row--email::before,
+  .form-white__row--phone::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 60px;
+    width: 64px;
+    height: 64px;
+    background-color: @gray-color;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  .form-white__row--email::before {
+    right: 50px;
+  }
+
+  h2.form-white__text--pink {
+    display: inline-flex;
+    position: relative;
+    top: -25px;
+    left: 295px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    text-align: center;
+    display: flex;
+    text-transform: uppercase;
+    padding: 0 40px;
+    color: @pink-color;
+    background-color: @white-color;
+  }
+
+  .form-white--second .form-white__text--pink {
+    padding-left: 15px;
+  }
+
+  .form-white--third .form-white__text--pink {
+    top: 0px;
+    left: 320px;
   }
 }

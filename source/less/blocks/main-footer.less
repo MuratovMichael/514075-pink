@@ -2,30 +2,108 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 254px;
   background-color: @white-color;
-  padding-top: 40px;
-}
+  padding-top: 38px;
+  max-height: 284px;
 
-.main-footer__logo {
-  padding-bottom: 40px;
-}
-
-@media (min-width: @mobile-width) {
-  .main-footer {
-    max-height: 284px;
+  &--hidden {
+    display: none;
   }
 }
 
+.main-footer__logo {
+  padding-left: 20px;
+}
+
+.main-footer__logo:hover path {
+  fill: @pink-color;
+}
+
+.main-footer__logo:active path {
+  fill: @border-social;
+}
+
+.main-footer__link-mobile {
+  width: 74px;
+  height: 23px;
+}
+
+.main-footer__link-tablet {
+  width: 146px;
+  height: 40px;
+  display: none;
+}
+
+.main-footer__link-desktop {
+  width: 146px;
+  height: 40px;
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
+  .main-footer__container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .main-footer__logo {
+    margin-top: -10px;
+    padding-left: 0;
+  }
+
+  .main-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 660px;
+    margin: 0 auto;
+
+    &--hidden {
+      display: block;
+    }
+  }
+
+  .main-footer__link-mobile {
+    width: 74px;
+    height: 23px;
+  }
+
+  .main-footer__link-tablet {
+    width: 146px;
+    height: 40px;
+  }
+
+  .main-footer__link-desktop {
+    width: 146px;
+    height: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
   .main-footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 660px;
+    width: 960px;
     margin: 0 auto;
-    min-height: 127px;
+    padding: 85px 0 70px 0;
+  }
+
+  .main-footer__container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 920px;
+    margin: 0 auto;
+  }
+
+  .main-footer__logo {
+    padding-top: 23px;
+    margin-left: -10px;
   }
 }
-
-

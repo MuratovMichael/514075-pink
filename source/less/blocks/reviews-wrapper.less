@@ -1,41 +1,98 @@
 .reviews-wrapper {
   background-color: @gray-color;
-  margin-top: -6px;
+  margin-top: -8px;
   margin-bottom: 20px;
-  padding-bottom: 15px;
+  padding: 19px 0;
 }
 
 .reviews-wrapper__author-name {
   font-weight: 700;
+  padding-left: 17px;
   color: @bg-standart-color;
 }
 
 .reviews-wrapper__times-ago {
-  font-size: 100;
+  font-size: 12px;
+  text-transform: uppercase;
   color: @bg-standart-color;
 }
 
 .reviews-wrapper__text {
   color: @bg-standart-color;
+  padding: 0 0 8px 17px;
   margin: 0;
 }
 
-@media (min-width: @tablet-width) {
-  .reviews-wrapper {
-    padding-top: 20px;
-  }
+.reviews-wrapper__like {
+  font-size: 12px;
+  line-height: 24px;
+  color: @pink-color;
+  text-transform: uppercase;
+  padding-left: 50px;
+  background-image: url(../img/icon-heart.svg);
+  background-repeat: no-repeat;
+  background-position: 18px 3px;
 }
 
 @media (min-width: @tablet-width) {
+  .reviews-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 620px;
+    margin-top: -6px;
+    margin-left: -170px;
+    padding-top: 15px;
+  }
+
+  .reviews-wrapper__times-ago {
+    flex-grow: 1;
+    padding-top: 5px;
+    padding-left: 5px;
+  }
+
+  .reviews-wrapper__author-name {
+    padding-top: 5px;
+    padding-left: 28px;
+  }
+
   .reviews-wrapper__text {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    order: 2;
+    padding-left: 27px;
+  }
+
+  .reviews-wrapper__like {
+    font-size: 12px;
+    line-height: 24px;
+    color: @pink-color;
+    text-transform: uppercase;
+    padding-top: 8px;
+    padding-left: 50px;
+    padding-right: 57px;
+    background-image: url(../img/icon-heart.svg);
+    background-repeat: no-repeat;
+    background-position: 155px 13px;
   }
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @desktop-width) {
   .reviews-wrapper {
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 940px;
+    margin: -10px 10px 0 -330px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+  }
+
+  .reviews-wrapper__like {
+    font-size: 12px;
+    line-height: 24px;
+    color: @pink-color;
+    text-transform: uppercase;
+    padding-top: 8px;
+    padding-left: 50px;
+    padding-right: 62px;
+    background-image: url(../img/icon-heart.svg);
+    background-repeat: no-repeat;
+    background-position: 155px 13px;
   }
 }

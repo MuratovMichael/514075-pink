@@ -1,17 +1,15 @@
-@media (min-width: @mobile-width) {
-  .photo-users {
-    display: flex;
-    flex-direction: column;
-    width: 320px;
-    margin: 0 auto;
-  }
+.photo-users {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
 }
 
-.photo-users__text-top {
+.photo-users__text--top {
   font-size: 14px;
   line-height: 30px;
   text-align: center;
-  padding: 0 30px;
+  padding: 0 35px 37px 35px;
   color: @bg-standart-color;
 }
 
@@ -20,7 +18,7 @@
   line-height: 30px;
   color: @bg-standart-color;
   text-align: center;
-  padding-bottom: 50px;
+  padding: 25px 10px 45px 10px;
   margin: 0;
 }
 
@@ -28,20 +26,45 @@
   .photo-users {
     width: 660px;
   }
-}
 
-@media (min-width: @tablet-width) {
-  .photo-users__text-top {
+  .photo-users__text--top {
     font-size: 18px;
     line-height: 30px;
-    padding-bottom: 40px;
+    padding-bottom: 57px;
   }
-}
 
-@media (min-width: @tablet-width) {
   .photo-users__text--bottom {
     font-size: 18px;
     line-height: 30px;
+    padding: 50px;
+    padding-bottom: 70px;
+  }
+
+  .photo-users__container {
+    padding: 0 30px;
   }
 }
 
+@media (min-width: @desktop-width) {
+  .photo-users {
+    width: 100%;
+  }
+
+  .photo-users__container {
+    padding: 0 130px;
+  }
+
+  .photo-users__text--top {
+    margin-top: 20px;
+    margin-bottom: 88px;
+    padding: 0 320px;
+  }
+
+  .photo-users__text--bottom {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 50px;
+    padding-top: 5px;
+    padding-bottom: 70px;
+  }
+}
