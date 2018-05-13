@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <script src="js/picturefill.js" async=""></script>
@@ -23,8 +22,8 @@
             </a>
           </li>
           <li class="main-header__button">
-            <img class="main-header__logo-image main-header__logo-image--burger" src="img/icon-menu-burger.svg" width="" height="" alt="Логотип Пинк">
-            <img class="main-header__logo-image main-header__logo-image--close" src="img/icon-menu-cross.svg" width="" height="" alt="Логотип Пинк">
+            <img class="main-header__logo-image main-header__logo-image--burger" src="img/icon-menu-burger.svg" width="50" height="24" alt="Логотип Пинк">
+            <img class="main-header__logo-image main-header__logo-image--close" src="img/icon-menu-cross.svg" width="24" height="24" alt="Логотип Пинк">
           </li>
         </ul>
         <nav class="main-navigation">
@@ -137,9 +136,9 @@
               </blockquote>
             </div>
             <div class="slider slider--reviews">
-              <button class="slider__general slider__general--active" type="button"></button>
-              <button class="slider__general" type="button"></button>
-              <button class="slider__general" type="button"></button>
+              <button class="slider__general slider__general--active" area-label="Отзыв-1" type="button"><span class="visually-hidden">Отзыв-1</span></button>
+              <button class="slider__general" type="button"><span class="visually-hidden">Отзыв-2</span></button>
+              <button class="slider__general" type="button"><span class="visually-hidden">Отзыв-3</span></button>
             </div>
           </div>
         </div>
@@ -187,9 +186,9 @@
             </tbody>
           </table>
           <div class="slider slider--hits">
-            <button class="slider__general" type="button"></button>
-            <button class="slider__general slider__general--active" type="button"></button>
-            <button class="slider__general" type="button"></button>
+            <button class="slider__general" area-label="Отзыв-1" type="button"><span class="visually-hidden">Отзыв-1</span></button>
+            <button class="slider__general slider__general--active" type="button"><span class="visually-hidden">Отзыв-2</span></button>
+            <button class="slider__general" type="button"><span class="visually-hidden">Отзыв-3</span></button>
           </div>
         </div>
       </section>
@@ -204,7 +203,7 @@
             </li>
             <li class="contacts__item">
               <b class="contacts__text contacts__text--bold">Пишите:
-              <span class="contacts__text contacts__text--pink">mail@htmlacademy.ru</span>
+              <a href="#" class="contacts__text contacts__text--link contacts__text--pink">mail@htmlacademy.ru</a>
               </b>
             </li>
             <li class="contacts__item">
@@ -218,9 +217,9 @@
       <section class="map">
         <picture>
           <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.988157269594!2d30.348136816077997!3d59.93233868187385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631a5e66d51c5%3A0x6f00589ac258db97!2z0J3QtdCy0YHQutC40Lkg0L_RgC4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCz!5e0!3m2!1sru!2sru!4v1525988256577" width="1200" height="976" frameborder="0" allowfullscreen></iframe>
-          <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg, img/bg-map-desktop@2x.jpg">
-          <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg, img/bg-map-tablet@2x.jpg">
-          <img src="img/bg-map-mobile@1x.png" alt="Карта">
+          <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+          <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@1x.png 2x" alt="Карта">
         </picture>
       </section>
     </main>

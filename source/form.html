@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <script src="js/picturefill.js" async=""></script>
@@ -14,7 +13,7 @@
       <div class="main-header__container">
         <ul class="main-header__list">
           <li class="main-header__logo">
-            <a class="main-header__link" href="#">
+            <a class="main-header__link" href="index.html">
               <picture>
                 <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
                 <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
@@ -23,8 +22,8 @@
             </a>
           </li>
           <li class="main-header__button">
-            <img class="main-header__logo-image main-header__logo-image--burger" src="img/icon-menu-burger.svg" width="" height="" alt="Логотип Пинк">
-            <img class="main-header__logo-image main-header__logo-image--close" src="img/icon-menu-cross.svg" width="" height="" alt="Логотип Пинк">
+            <img class="main-header__logo-image main-header__logo-image--burger" src="img/icon-menu-burger.svg" width="50" height="24" alt="Логотип Пинк">
+            <img class="main-header__logo-image main-header__logo-image--close" src="img/icon-menu-cross.svg" width="24" height="24" alt="Логотип Пинк">
           </li>
         </ul>
         <nav class="main-navigation">
@@ -129,11 +128,11 @@
               </ul>
             </fieldset>
             <fieldset class="form-white form-white--third">
-              <h2 class="form-white__text form-white__text--pink" for="comments">Опишите свои эмоции</h2>
+              <h2 class="form-white__text form-white__text--pink">Опишите свои эмоции</h2>
               <textarea class="form-white__comments" id="comments" name="comments" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
             <div class="send-form">
-              <button class="main-form__button" type="sumbit">Отправить форму</button>
+              <a class="main-form__button" href="#">Отправить форму</a>
               <p class="main-form__text-required"><supp>*</supp> &#8212; Обязательные поля</p>
             </div>
           </form>
