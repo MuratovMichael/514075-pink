@@ -13,12 +13,12 @@
       <div class="main-header__container">
         <ul class="main-header__list">
           <li class="main-header__logo">
-            <a class="main-header__link" href="index.html">
-              <picture>
-                <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-                <img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
-              </picture>
+            <a class="main-header__link">
+              <svg class="main-header__link-image">
+                <use class="main-header__link-mobile" xlink:href="img/sprite/sp-logo-pink-white-mobile" width="75" height="23"></use>
+                <use class="main-header__link-tablet" xlink:href="img/sprite/sp-logo-pink-white-tablet" width="146" height="40"></use>
+                <use class="main-header__link-desktop" xlink:href="img/sprite/sp-logo-pink-white-desktop" width="146" height="40"></use>
+              </svg>
             </a>
           </li>
           <li class="main-header__button">
