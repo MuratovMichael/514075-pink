@@ -23,6 +23,23 @@
   fill: @border-social;
 }
 
+.main-footer__link-mobile {
+  width: 74px;
+  height: 23px;
+}
+
+.main-footer__link-tablet {
+  width: 146px;
+  height: 40px;
+  display: none;
+}
+
+.main-footer__link-desktop {
+  width: 146px;
+  height: 40px;
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .main-footer__container {
     display: flex;
@@ -48,6 +65,21 @@
     &--hidden {
       display: block;
     }
+  }
+
+  .main-footer__link-mobile {
+    width: 74px;
+    height: 23px;
+  }
+
+  .main-footer__link-tablet {
+    width: 146px;
+    height: 40px;
+  }
+
+  .main-footer__link-desktop {
+    width: 146px;
+    height: 40px;
   }
 }
 
