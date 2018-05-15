@@ -24,11 +24,10 @@
     "posthtml-include": "^1.1.0",
     "run-sequence": "^2.2.1",
     "stylelint": "8.4.x",
-    "stylelint-config-htmlacademy": "0.1.x"
-  },
-  "dependencies": {
+    "stylelint-config-htmlacademy": "0.1.x",
     "pump": "^3.0.0"
   },
+
   "editorconfig-cli": [
     "*.json",
     "*.js",
