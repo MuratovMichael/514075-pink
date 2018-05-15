@@ -102,11 +102,11 @@
               <div class="form-white__contact-block">
                 <div class="form-white__row form-white__row--phone">
                   <label class="form-white__text form-white__text--pink" for="tel">Номер телефона</label>
-                  <input class="form-white__contacts" id="tel" type="text" name="tel" placeholder="Номер, пожалуйста">
+                  <input class="form-white__contacts" id="tel" type="tel" name="tel" placeholder="Номер, пожалуйста">
                 </div>
                 <div class="form-white__row form-white__row--email">
                   <label class="form-white__text form-white__text--pink" for="email">Адрес почты</label>
-                  <input class="form-white__contacts" id="email" type="text" name="email" placeholder="Введите почту">
+                  <input class="form-white__contacts" id="email" type="email" name="email" placeholder="Введите почту">
                 </div>
               </div>
             </fieldset>
@@ -132,7 +132,7 @@
               <textarea class="form-white__comments" id="comments" name="comments" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
             <div class="send-form">
-              <a class="main-form__button" href="#">Отправить форму</a>
+              <button class="main-form__button" href="#">Отправить форму</button>
               <p class="main-form__text-required"><supp>*</supp> &#8212; Обязательные поля</p>
             </div>
           </form>
@@ -202,7 +202,7 @@
       <h2 class="modal-failure__main-text">Что-то пошло не так!</h2>
       <p class="modal-failure__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <div class="modal-failure__btn">
-        <button class="modal-failure__button">Ок</button>
+        <a class="modal-failure__button">Ок</a>
       </div>
     </section>
   </body>
