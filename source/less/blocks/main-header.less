@@ -20,22 +20,16 @@
 
 .main-header__logo {
   display: block;
+  cursor: pointer;
 }
 
-.main-header__link-image {
-  width: 75px;
-  height: 23px;
-}
-
+.main-header__link-image,
 .main-header__link-mobile {
   width: 75px;
   height: 23px;
 }
 
-.main-header__link-tablet {
-  display: none;
-}
-
+.main-header__link-tablet,
 .main-header__link-desktop {
   display: none;
 }
@@ -87,7 +81,7 @@
     min-height: 110px;
   }
 
-  .main-header__link--image {
+  .main-header__link-image {
     width: 146px;
     height: 40px;
   }
@@ -116,7 +110,7 @@
 
   .main-header__logo,
   .main-header__button {
-    align-self: center;;
+    align-self: center;
   }
 
   .main-header__logo-image--burger {
@@ -125,6 +119,10 @@
 
   .main-header__logo-image--close {
     display: none;
+  }
+
+  .main-header__logo {
+    padding-bottom: 15px;
   }
 }
 
@@ -157,7 +155,8 @@
     display: none;
   }
 
-  .main-header__link-desktop {
+  .main-header__link-desktop,
+  .main-header__link-image {
     display: block;
     width: 146px;
     height: 40px;

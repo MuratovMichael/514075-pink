@@ -43,12 +43,23 @@
 @media (min-width: @desktop-width) {
   .first-block-reviews {
     margin: 0 auto;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
   }
 
   .first-block-reviews__image {
     width: 960px;
     height: 506px;
     margin: 0 auto;
+  }
+
+  .first-block-reviews::before {
+    content: "";
+    position: absolute;
+    top: 55px;
+    right: 10px;
+    width: 140px;
+    height: 36px;
+    background-image: url(../img/panorama-day.jpg);
+    background-repeat: no-repeat;
   }
 }

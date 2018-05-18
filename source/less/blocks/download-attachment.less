@@ -86,13 +86,13 @@
   .download-attachment {
     background-image: url(../img/bg-back-tablet@1x.jpg);
     background-repeat: no-repeat;
-    background-position: -340px top;
+    background-position: center top;
     background-color: @bg-standart-color;
     background-size: cover;
     width: 660px;
     margin: 0 auto;
     min-height: 195px;
-    padding-top: 525px;
+    padding-top: 407px;
     padding-bottom: 20px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -105,7 +105,8 @@
     position: absolute;
     width: 660px;
     height: 550px;
-    top: 190px;
+    top: 72px;
+    right: 20px;
     z-index: 2;
     background-image: url(../img/iphone-hand-tablet@1x.png);
     background-repeat: no-repeat;
@@ -158,6 +159,16 @@
     padding-left: 12px;
     width: 330px;
   }
+
+  .download-attachment__title {
+    font-size: 40px;
+    line-height: 1.2;
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    padding-left: 60px;
+    padding-right: 45px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -168,9 +179,9 @@
     background-position: center 0;
     background-color: @bg-standart-color;
     width: 960px;
-    min-height: 310px;
     margin: 0 auto;
-    padding-top: 525px;
+    padding-top: 415px;
+    padding-bottom: 135px;
     margin-bottom: 15px;
     z-index: 5;
 
@@ -182,7 +193,7 @@
   .download-attachment::before {
     content: "";
     position: absolute;
-    top: 210px;
+    top: 100px;
     right: 30px;
     width: 760px;
     height: 645px;
@@ -201,6 +212,18 @@
     margin-top: -345px;
     margin-left: 100px;
     width: 400px;
+  }
+
+  .download-attachment__text--hidden {
+    display: block;
+    font-size: 48px;
+    line-height: 60px;
+    color: @white-color;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 28px;
+    margin-left: -150px;
+    width: 300px;
   }
 
   .download-attachment__button {
@@ -227,15 +250,5 @@
     font-weight: 300;
     margin-left: -110px;
     width: 330px;
-  }
-
-  .download-attachment__text--hidden {
-    display: block;
-    font-size: 50px;
-    line-height: 60px;
-    color: @white-color;
-    font-weight: 300;
-    text-align: center;
-    padding-bottom: 28px;
   }
 }

@@ -11,10 +11,6 @@
   }
 }
 
-.main-footer__logo {
-  padding-left: 20px;
-}
-
 .main-footer__logo:hover path {
   fill: @pink-color;
 }
@@ -23,20 +19,22 @@
   fill: @border-social;
 }
 
+.main-footer__logo {
+  display: block;
+  padding-left: 20px;
+}
+
 .main-footer__link-mobile {
-  width: 74px;
-  height: 23px;
+  display: block;
+  width: 146px;
+  height: 40px;
 }
 
 .main-footer__link-tablet {
-  width: 146px;
-  height: 40px;
   display: none;
 }
 
 .main-footer__link-desktop {
-  width: 146px;
-  height: 40px;
   display: none;
 }
 
@@ -68,18 +66,17 @@
   }
 
   .main-footer__link-mobile {
-    width: 74px;
-    height: 23px;
+    display: none;
   }
 
   .main-footer__link-tablet {
+    display: block;
     width: 146px;
     height: 40px;
   }
 
   .main-footer__link-desktop {
-    width: 146px;
-    height: 40px;
+    display: none;
   }
 }
 
@@ -103,25 +100,23 @@
   }
 
   .main-footer__logo {
-    padding-top: 23px;
-    margin-left: -10px;
+    display: block;
+    margin-left: -13px;
+    margin-top: -15px;
   }
 
+  .main-footer__link-mobile {
+    display: none;
+  }
+
+  .main-footer__link-tablet {
+    display: none;
+  }
+
+  .main-footer__link-desktop,
   .main-footer__link-image {
-    width: 146px;
-    height:40px;
-  }
-
-  .main-footer__link--desktop {
+    display: block;
     width: 146px;
     height: 40px;
-  }
-
-  .main-footer__link--tablet {
-    display: none;
-  }
-
-  .main-footer__link--desktop {
-    display: none;
   }
 }
