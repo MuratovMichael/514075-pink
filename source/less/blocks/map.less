@@ -31,10 +31,22 @@
 
 @media (min-width: @desktop-width) {
   .map {
+    position: relative;
     width: 960px;
     height: 520px;
     margin: 0 auto;
     margin-top: -40px;
+  }
+
+  .map::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    background-image: url(../img/icon-map-marker.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 36px;
+    height: 36px;
   }
 
   .map::after {

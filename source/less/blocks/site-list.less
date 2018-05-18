@@ -16,6 +16,11 @@
   text-transform: uppercase;
 }
 
+.site-list__link--active {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #fff;
+}
+
 @media (min-width: @tablet-width) {
   .site-list__link:hover {
     color: @pink-color;
@@ -23,11 +28,6 @@
 
   .site-list__link:active {
     color: @site-list-active;
-  }
-
-  .site-list__link--active {
-    padding-bottom: 10px;
-    border-bottom: 2px solid #fff;
   }
 
   .site-list__item {
